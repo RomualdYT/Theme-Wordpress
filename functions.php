@@ -134,7 +134,7 @@ function the_words_scripts() {
     // TailwindCSS v4 for visual layout
     wp_enqueue_script(
         'tailwindcss',
-        'https://cdn.tailwindcss.com/4.0.0',
+        'https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4',
         array(),
         null,
         false
