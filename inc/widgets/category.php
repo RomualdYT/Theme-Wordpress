@@ -1,4 +1,8 @@
- * @package The BLIP!
+<?php
+/**
+ * @package The_BLIP
+ */
+
                 'The_Words_Category_Widget', esc_html__('TA : Sidebar Category', 'the-blip'), array(
                 'description' => esc_html__('This Widget show Categories', 'the-blip')
                 'the_words_widgets_title' => esc_html__('Title', 'the-blip'),
@@ -8,6 +12,7 @@
                 'the_words_widgets_title' => esc_html__('Category Four', 'the-blip'),
                 'the_words_widgets_title' => esc_html__('Category Five', 'the-blip'),
                 'the_words_widgets_title' => esc_html__('Category Six', 'the-blip'),
+
 add_action('widgets_init', 'the_words_category_register');
 
 function the_words_category_register() {

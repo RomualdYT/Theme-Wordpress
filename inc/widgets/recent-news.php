@@ -1,4 +1,7 @@
- * @package The BLIP!
+<?php
+/**
+ * @package The_BLIP
+ */
 				'The_Words_Recent_Posts_Widget', esc_html__('TA : Sidebar Recent Posts', 'the-blip'), array(
 				'description' => esc_html__('This Widget show Recent Posts', 'the-blip')
 					'the_words_widgets_title' => esc_html__('Title', 'the-blip'),
