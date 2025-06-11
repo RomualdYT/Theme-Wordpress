@@ -1,10 +1,10 @@
 <?php
 /**
- * The BLIP functions and definitions
+ * Fonctions et définitions de The BLIP.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -25,9 +25,9 @@ if ( ! function_exists( 'the_words_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on The BLIP, use a find and replace
-		 * to change 'the-words' to the name of your theme in all the template files.
+		 * to change 'the-blip' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'the-words', get_template_directory() . '/languages' );
+                load_theme_textdomain( 'the-blip', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -51,15 +51,15 @@ if ( ! function_exists( 'the_words_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-		add_image_size('the-words-grid', 500, 350, true );
-		add_image_size('the-words-full', 1300, 700, true );
+                add_image_size('the-blip-grid', 500, 350, true );
+                add_image_size('the-blip-full', 1300, 700, true );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'the-words-top-menu' => esc_html__( 'Top Menu', 'the-words' ),
-			'the-words-primary-menu' => esc_html__( 'Primary Menu', 'the-words' ),
-			'the-words-footer-menu' => esc_html__( 'Footer Menu', 'the-words' ),
-		) );
+                register_nav_menus( array(
+                        'the-blip-top-menu' => esc_html__( 'Top Menu', 'the-blip' ),
+                        'the-blip-primary-menu' => esc_html__( 'Primary Menu', 'the-blip' ),
+                        'the-blip-footer-menu' => esc_html__( 'Footer Menu', 'the-blip' ),
+                ) );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -162,8 +162,8 @@ function the_words_admin_enqueue(){
         wp_enqueue_media();
     	wp_enqueue_script( 'the-words-widget', get_template_directory_uri() . '/assets/js/widget.js', array( 'jquery'), '20160714', true );
     	 $array = array(
-	        'remove'     => esc_html__('Remove','the-words'),
-	        'uploadimage'     => esc_html__('Author Image','the-words'),
+	        'remove'     => esc_html__('Remove','the-blip'),
+	        'uploadimage'     => esc_html__('Author Image','the-blip'),
 	    );
 	    wp_localize_script( 'the-words-widget', 'the_words_widget_date', $array );
      }

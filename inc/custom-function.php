@@ -1,9 +1,9 @@
 <?php
 /**
- * Custom Functions
+ * Fonctions personnalisées.
  *
- * @package The_Words
-**/
+ * @package The_BLIP
+ */
 
 if( !function_exists( 'the_words_fonts_url' ) ) :
 
@@ -100,7 +100,7 @@ if ( ! function_exists( 'the_words_posted_by' ) ) :
 		$ed_post_author = get_theme_mod('ed_post_author',1);
 		if( $ed_post_author ){
 
-			$avatar = get_avatar( get_the_author_meta( 'ID' ),'50','',esc_html__('Author Image','the-words') );
+			$avatar = get_avatar( get_the_author_meta( 'ID' ),'50','',esc_html__('Author Image','the-blip') );
 			echo '<span class="byline ta-author-image">';
 
 			echo '<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . wp_kses_post( $avatar ). '</a>';
@@ -165,10 +165,10 @@ if ( ! function_exists( 'the_words_entry_footer' ) ) :
 
 			if( $tags ){
 				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'the-words' ) );
+				$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'the-blip' ) );
 				if ( $tags_list ) {
 					/* translators: 1: list of tags. */
-					printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'the-words' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+					printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'the-blip' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 				}
 			}
 		}
@@ -180,7 +180,7 @@ if ( ! function_exists( 'the_words_entry_footer' ) ) :
 					sprintf(
 						wp_kses(
 							/* translators: %s: post title */
-							__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'the-words' ),
+							__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'the-blip' ),
 							array(
 								'span' => array(
 									'class' => array(),
@@ -200,7 +200,7 @@ if ( ! function_exists( 'the_words_entry_footer' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'the-words' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'the-blip' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -348,7 +348,7 @@ if( !function_exists('the_words_category_list') ):
 	        )
 	    );
 	    $cat_array = array();
-	    $cat_array[] = esc_html__('--Choose Category--','the-words');
+	    $cat_array[] = esc_html__('--Choose Category--','the-blip');
 	    foreach( $cat_lists as $cat_list ){
 	        $cat_array[$cat_list->slug] = $cat_list->name;
 	    }
@@ -522,7 +522,7 @@ if( ! function_exists( 'the_words_single_related_post' ) ) :
 
         if( $related_posts_query->have_posts() ): 
             
-            $ed_related_post_title = get_theme_mod('ed_related_post_title',esc_html__( 'Related Posts','the-words' ) ); ?>
+            $ed_related_post_title = get_theme_mod('ed_related_post_title',esc_html__( 'Related Posts','the-blip' ) ); ?>
 
             <div class="single-related-posts clearfix">
                 <div class="ta-container container mx-auto px-4">
@@ -540,7 +540,7 @@ if( ! function_exists( 'the_words_single_related_post' ) ) :
                         <?php while( $related_posts_query->have_posts() ){
                             $related_posts_query->the_post();
 
-                            $the_words_related_image = wp_get_attachment_image_src( get_post_thumbnail_id(),'the-words-grid' ); ?>
+                            $the_words_related_image = wp_get_attachment_image_src( get_post_thumbnail_id(),'the-blip-grid' ); ?>
 
                             <div class="loop-related-conents ta-match-height">
                                 <div class="related-img-contents">
@@ -599,8 +599,8 @@ if( !function_exists('the_words_subscribe') ):
 		}
 
 		$ed_subscribe_section = get_theme_mod('ed_subscribe_section',0);
-		$subscribe_form_title = get_theme_mod('subscribe_form_title',esc_html__('Subscribe Us For Latest News', 'the-words'));
-		$subscribe_form_description = get_theme_mod('subscribe_form_description',esc_html__('It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.', 'the-words'));
+		$subscribe_form_title = get_theme_mod('subscribe_form_title',esc_html__('Subscribe Us For Latest News', 'the-blip'));
+		$subscribe_form_description = get_theme_mod('subscribe_form_description',esc_html__('It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.', 'the-blip'));
 		$subscribe_form_shortcode = get_theme_mod('subscribe_form_shortcode');
 		if( $ed_subscribe_section && $subscribe_form_shortcode ){ ?>
 
@@ -686,7 +686,7 @@ function the_words_ocdi_after_import_setup() {
     $main_menu = get_term_by( 'name', 'Primary Menu', 'nav_menu' );
   
     set_theme_mod( 'nav_menu_locations', [
-            'the-words-primary-menu' => $main_menu->term_id, // replace 'main-menu' here with the menu location identifier from register_nav_menu() function in your theme.
+            'the-blip-primary-menu' => $main_menu->term_id, // replace 'main-menu' here with the menu location identifier from register_nav_menu() function in your theme.
         ]
     );
   

@@ -1,9 +1,9 @@
 <?php
 /**
- * Customizer Header Layout One
+ * En-tête mise en page deux.
  *
- * @package The_Words
-**/
+ * @package The_BLIP
+ */
 
 $ed_header_search = get_theme_mod('ed_header_search',1);
 $header_class  = '';
@@ -13,21 +13,21 @@ if( !$ed_header_search ){
 $ed_header_social_icon = get_theme_mod('ed_header_social_icon',0);
 ?>
 
-<?php if( has_nav_menu('the-words-top-menu') || $ed_header_social_icon ){ ?>
+<?php if( has_nav_menu('the-blip-top-menu') || $ed_header_social_icon ){ ?>
 
 	<div class="ta-top-header ta-top-header-2">
 
 		<div class="ta-container clearfix container mx-auto px-4">
 
 			<div class="ta-top-header-inner">
-				<?php if( has_nav_menu('the-words-top-menu') ){ ?>
+				<?php if( has_nav_menu('the-blip-top-menu') ){ ?>
 
 					<div class="ta-top-menu">
 						<nav id="top-site-navigation" class="top-navigation">
 
 							<?php
 							wp_nav_menu( array(
-								'theme_location' => 'the-words-top-menu',
+								'theme_location' => 'the-blip-top-menu',
 								'menu_id'        => 'top-menu',
 								'depth'        => 1,
 							) );
@@ -105,7 +105,7 @@ $ed_header_social_icon = get_theme_mod('ed_header_social_icon',0);
 				</button>
 				<?php
 				wp_nav_menu( array(
-					'theme_location' => 'the-words-primary-menu',
+					'theme_location' => 'the-blip-primary-menu',
 					'menu_id'        => 'primary-menu',
 				) );
 				?>

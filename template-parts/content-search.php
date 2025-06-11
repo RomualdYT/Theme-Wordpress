@@ -1,10 +1,10 @@
 <?php
 /**
- * Template part for displaying posts
+ * Partie de modèle pour afficher les articles.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package The_Words
+ * @package The_BLIP
  */
 $ed_post_excerpt = get_theme_mod('ed_post_excerpt',1);
 ?>
@@ -12,7 +12,7 @@ $ed_post_excerpt = get_theme_mod('ed_post_excerpt',1);
 <article id="post-<?php the_ID(); ?>" <?php post_class('ta-match-height'); ?>>
 	<div class="ta-artical-posts">
 
-	<?php the_words_post_thumbnail('the-words-grid'); ?>
+        <?php the_words_post_thumbnail('the-blip-grid'); ?>
 
 	<div class="ta-content-wraper">
 

@@ -1,13 +1,12 @@
 <?php
 /**
- * The template for displaying comments
+ * Modèle pour afficher les commentaires.
  *
- * This is the template that displays the area of the page that contains both the current comments
- * and the comment form.
+ * Contient la zone des commentaires et le formulaire.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
 /*
@@ -32,13 +31,13 @@ if ( post_password_required() ) {
 			if ( '1' === $the_words_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'the-words' ),
+                                        esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'the-blip' ),
 					'<span>' . esc_html( get_the_title() ) . '</span>'
 				);
 			} else {
 				printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $the_words_comment_count, 'comments title', 'the-words' ) ),
+                                        esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $the_words_comment_count, 'comments title', 'the-blip' ) ),
 					number_format_i18n( $the_words_comment_count ),
 					'<span>' . esc_html( get_the_title() ) . '</span>'
 				);
@@ -63,7 +62,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'the-words' ); ?></p>
+                        <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'the-blip' ); ?></p>
 			<?php
 		endif;
 

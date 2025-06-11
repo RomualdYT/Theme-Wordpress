@@ -13,8 +13,8 @@ class The_Words_Category_Widget extends WP_Widget {
 
     public function __construct() {
         parent::__construct(
-                'The_Words_Category_Widget', esc_html__('TA : Sidebar Category', 'the-words'), array(
-                'description' => esc_html__('This Widget show Categories', 'the-words')
+                'The_Words_Category_Widget', esc_html__('TA : Sidebar Category', 'the-blip'), array(
+                'description' => esc_html__('This Widget show Categories', 'the-blip')
                 )
         );
     }
@@ -28,42 +28,42 @@ class The_Words_Category_Widget extends WP_Widget {
         $fields = array(
             'recent_post_title' => array(
                 'the_words_widgets_name' => 'recent_post_title',
-                'the_words_widgets_title' => esc_html__('Title', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Title', 'the-blip'),
                 'the_words_widgets_field_type' => 'text',
             ),
             'recent_post_category_1' => array(
                 'the_words_widgets_name' => 'recent_post_category_1',
-                'the_words_widgets_title' => esc_html__('Category One', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Category One', 'the-blip'),
                 'the_words_widgets_field_type' => 'select',
                 'the_words_widgets_field_options' => $the_words_cat_list,
             ),
             'recent_post_category_2' => array(
                 'the_words_widgets_name' => 'recent_post_category_2',
-                'the_words_widgets_title' => esc_html__('Category Two', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Category Two', 'the-blip'),
                 'the_words_widgets_field_type' => 'select',
                 'the_words_widgets_field_options' => $the_words_cat_list,
             ),
             'recent_post_category_3' => array(
                 'the_words_widgets_name' => 'recent_post_category_3',
-                'the_words_widgets_title' => esc_html__('Category Three', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Category Three', 'the-blip'),
                 'the_words_widgets_field_type' => 'select',
                 'the_words_widgets_field_options' => $the_words_cat_list,
             ),
             'recent_post_category_4' => array(
                 'the_words_widgets_name' => 'recent_post_category_4',
-                'the_words_widgets_title' => esc_html__('Category Four', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Category Four', 'the-blip'),
                 'the_words_widgets_field_type' => 'select',
                 'the_words_widgets_field_options' => $the_words_cat_list,
             ),
             'recent_post_category_5' => array(
                 'the_words_widgets_name' => 'recent_post_category_5',
-                'the_words_widgets_title' => esc_html__('Category Five', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Category Five', 'the-blip'),
                 'the_words_widgets_field_type' => 'select',
                 'the_words_widgets_field_options' => $the_words_cat_list,
             ),
             'recent_post_category_6' => array(
                 'the_words_widgets_name' => 'recent_post_category_6',
-                'the_words_widgets_title' => esc_html__('Category Six', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Category Six', 'the-blip'),
                 'the_words_widgets_field_type' => 'select',
                 'the_words_widgets_field_options' => $the_words_cat_list,
             ),

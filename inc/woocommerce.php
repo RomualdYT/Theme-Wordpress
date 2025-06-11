@@ -1,9 +1,9 @@
 <?php
 /**
- * Woocommerce Functions
+ * Fonctions WooCommerce.
  *
- * @package The_Words
-**/
+ * @package The_BLIP
+ */
 
 remove_action( 'woocommerce_before_main_content','woocommerce_breadcrumb',20 );
 remove_action( 'woocommerce_sidebar','woocommerce_get_sidebar',10 );

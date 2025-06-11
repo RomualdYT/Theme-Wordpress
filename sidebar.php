@@ -1,10 +1,10 @@
 <?php
 /**
- * The sidebar containing the main widget area
+ * Barre latérale avec la zone de widgets principale.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

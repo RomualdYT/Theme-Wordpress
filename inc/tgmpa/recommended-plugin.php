@@ -59,22 +59,22 @@ function the_words_register_required_plugins() {
 	 */
 	$plugins = array(
 		array(
-			'name'        => esc_html__('Categories Images','the-words'),
+			'name'        => esc_html__('Categories Images','the-blip'),
 			'slug'        => 'categories-images',
 			'required'  => false,
 		),
 		array(
-			'name'        => esc_html__('MC4WP: Mailchimp for WordPress','the-words'),
+			'name'        => esc_html__('MC4WP: Mailchimp for WordPress','the-blip'),
 			'slug'        => 'mailchimp-for-wp',
 			'required'  => false,
 		),
 		array(
-			'name'        => esc_html__('Social Feed Gallery','the-words'),
+			'name'        => esc_html__('Social Feed Gallery','the-blip'),
 			'slug'        => 'insta-gallery',
 			'required'  => false,
 		),
 		array(
-			'name'        => esc_html__('One Click Demo Import','the-words'),
+			'name'        => esc_html__('One Click Demo Import','the-blip'),
 			'slug'        => 'one-click-demo-import',
 			'required'  => false,
 		),
@@ -91,7 +91,7 @@ function the_words_register_required_plugins() {
 	 * Only uncomment the strings in the config array if you want to customize the strings.
 	 */
 	$config = array(
-		'id'           => 'the-words',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'id'           => 'the-blip',                 // Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',                      // Default absolute path to bundled plugins.
 		'menu'         => 'tgmpa-install-plugins', // Menu slug.
 		'parent_slug'  => 'themes.php',            // Parent menu slug.

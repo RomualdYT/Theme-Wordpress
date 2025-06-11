@@ -1,9 +1,9 @@
 <?php
 /**
- * Customizer Sanitize Functions
+ * Fonctions de nettoyage pour le customizer.
  *
- * @package The_Words
-**/
+ * @package The_BLIP
+ */
 
 
 if( !function_exists('the_words_sanitize_checkbox') ):

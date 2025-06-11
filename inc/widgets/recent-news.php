@@ -13,8 +13,8 @@ class The_Words_Recent_Posts_Widget extends WP_Widget {
 
 	public function __construct() {
 			parent::__construct(
-				'The_Words_Recent_Posts_Widget', esc_html__('TA : Sidebar Recent Posts', 'the-words'), array(
-				'description' => esc_html__('This Widget show Recent Posts', 'the-words')
+				'The_Words_Recent_Posts_Widget', esc_html__('TA : Sidebar Recent Posts', 'the-blip'), array(
+				'description' => esc_html__('This Widget show Recent Posts', 'the-blip')
 				)
 			);
 	}
@@ -28,19 +28,19 @@ class The_Words_Recent_Posts_Widget extends WP_Widget {
 		$fields = array(
 			'recent_post_title' => array(
 					'the_words_widgets_name' => 'recent_post_title',
-					'the_words_widgets_title' => esc_html__('Title', 'the-words'),
+					'the_words_widgets_title' => esc_html__('Title', 'the-blip'),
 					'the_words_widgets_field_type' => 'text',
-					'the_words_widgets_default_value' => esc_html__('Recent Posts', 'the-words'),
+					'the_words_widgets_default_value' => esc_html__('Recent Posts', 'the-blip'),
 			),
 			'recent_post_category' => array(
 					'the_words_widgets_name' => 'recent_post_category',
-					'the_words_widgets_title' => esc_html__('Blog Category', 'the-words'),
+					'the_words_widgets_title' => esc_html__('Blog Category', 'the-blip'),
 					'the_words_widgets_field_type' => 'select',
 					'the_words_widgets_field_options' => $the_words_cat_list,
 			),
 			'recent_post_posts' => array(
 					'the_words_widgets_name' => 'recent_post_posts',
-					'the_words_widgets_title' => esc_html__('Recent Blog Posts Number', 'the-words'),
+					'the_words_widgets_title' => esc_html__('Recent Blog Posts Number', 'the-blip'),
 					'the_words_widgets_field_type' => 'number',
 					'the_words_widgets_default_value' => 5,
 			),

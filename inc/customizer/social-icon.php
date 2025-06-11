@@ -1,13 +1,13 @@
 <?php
 /**
- * The BLIP Social Icons
+ * Icônes sociales de The BLIP.
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
 $wp_customize->add_section( 'social_icon_section',
     array(
-    'title'      => esc_html__( 'Social Icons', 'the-words' ),
+    'title'      => esc_html__( 'Social Icons', 'the-blip' ),
     'capability' => 'edit_theme_options',
     'panel'      => 'theme_option_panel',
     )
@@ -22,7 +22,7 @@ $wp_customize->add_setting('ed_header_social_icon',
 );
 $wp_customize->add_control('ed_header_social_icon',
     array(
-        'label' => esc_html__('Enable Header Social Icon', 'the-words'),
+        'label' => esc_html__('Enable Header Social Icon', 'the-blip'),
         'section' => 'social_icon_section',
         'type' => 'checkbox',
     )
@@ -37,7 +37,7 @@ $wp_customize->add_setting('ed_footer_social_icon',
 );
 $wp_customize->add_control('ed_footer_social_icon',
     array(
-        'label' => esc_html__('Enable Footer Social Icon', 'the-words'),
+        'label' => esc_html__('Enable Footer Social Icon', 'the-blip'),
         'section' => 'social_icon_section',
         'type' => 'checkbox',
     )
@@ -52,7 +52,7 @@ $wp_customize->add_setting( 'social_link_facebook',
 );
 $wp_customize->add_control( 'social_link_facebook',
     array(
-    'label'    => esc_html__( 'Facebook', 'the-words' ),
+    'label'    => esc_html__( 'Facebook', 'the-blip' ),
     'section'  => 'social_icon_section',
     'type'     => 'text',
     )
@@ -67,7 +67,7 @@ $wp_customize->add_setting( 'social_link_twitter',
 );
 $wp_customize->add_control( 'social_link_twitter',
     array(
-    'label'    => esc_html__( 'Twitter', 'the-words' ),
+    'label'    => esc_html__( 'Twitter', 'the-blip' ),
     'section'  => 'social_icon_section',
     'type'     => 'text',
     )
@@ -82,7 +82,7 @@ $wp_customize->add_setting( 'social_link_instagram',
 );
 $wp_customize->add_control( 'social_link_instagram',
     array(
-    'label'    => esc_html__( 'Instagram', 'the-words' ),
+    'label'    => esc_html__( 'Instagram', 'the-blip' ),
     'section'  => 'social_icon_section',
     'type'     => 'text',
     )
@@ -97,7 +97,7 @@ $wp_customize->add_setting( 'social_link_youtube',
 );
 $wp_customize->add_control( 'social_link_youtube',
     array(
-    'label'    => esc_html__( 'Youtube', 'the-words' ),
+    'label'    => esc_html__( 'Youtube', 'the-blip' ),
     'section'  => 'social_icon_section',
     'type'     => 'text',
     )
@@ -112,7 +112,7 @@ $wp_customize->add_setting( 'social_link_linkedin',
 );
 $wp_customize->add_control( 'social_link_linkedin',
     array(
-    'label'    => esc_html__( 'LinkedIn', 'the-words' ),
+    'label'    => esc_html__( 'LinkedIn', 'the-blip' ),
     'section'  => 'social_icon_section',
     'type'     => 'text',
     )
@@ -127,7 +127,7 @@ $wp_customize->add_setting( 'social_link_pinterest',
 );
 $wp_customize->add_control( 'social_link_pinterest',
     array(
-    'label'    => esc_html__( 'Pinterest', 'the-words' ),
+    'label'    => esc_html__( 'Pinterest', 'the-blip' ),
     'section'  => 'social_icon_section',
     'type'     => 'text',
     )
@@ -142,7 +142,7 @@ $wp_customize->add_setting( 'social_link_vk',
 );
 $wp_customize->add_control( 'social_link_vk',
     array(
-    'label'    => esc_html__( 'VK', 'the-words' ),
+    'label'    => esc_html__( 'VK', 'the-blip' ),
     'section'  => 'social_icon_section',
     'type'     => 'text',
     )
@@ -157,7 +157,7 @@ $wp_customize->add_setting( 'social_link_reddit',
 );
 $wp_customize->add_control( 'social_link_reddit',
     array(
-    'label'    => esc_html__( 'Reddit', 'the-words' ),
+    'label'    => esc_html__( 'Reddit', 'the-blip' ),
     'section'  => 'social_icon_section',
     'type'     => 'text',
     )
@@ -172,7 +172,7 @@ $wp_customize->add_setting( 'social_link_vimeo',
 );
 $wp_customize->add_control( 'social_link_vimeo',
     array(
-    'label'    => esc_html__( 'Vimeo ', 'the-words' ),
+    'label'    => esc_html__( 'Vimeo ', 'the-blip' ),
     'section'  => 'social_icon_section',
     'type'     => 'text',
     )
@@ -187,7 +187,7 @@ $wp_customize->add_setting( 'social_link_whatsapp',
 );
 $wp_customize->add_control( 'social_link_whatsapp',
     array(
-    'label'    => esc_html__( 'WhatsApp ', 'the-words' ),
+    'label'    => esc_html__( 'WhatsApp ', 'the-blip' ),
     'section'  => 'social_icon_section',
     'type'     => 'text',
     )
@@ -202,7 +202,7 @@ $wp_customize->add_setting( 'social_link_telegram',
 );
 $wp_customize->add_control( 'social_link_telegram',
     array(
-    'label'    => esc_html__( 'Telegram ', 'the-words' ),
+    'label'    => esc_html__( 'Telegram ', 'the-blip' ),
     'section'  => 'social_icon_section',
     'type'     => 'text',
     )

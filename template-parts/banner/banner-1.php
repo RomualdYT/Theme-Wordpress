@@ -1,9 +1,9 @@
 <?php
 /**
- * The BLIP Front Page Optionl
+ * Bannière de la page d'accueil.
  *
- * @package The_Words
-**/
+ * @package The_BLIP
+ */
 
 $ed_header_banner = get_theme_mod('ed_header_banner',1);
 $ta_header_banner_category = get_theme_mod('ta_header_banner_category');

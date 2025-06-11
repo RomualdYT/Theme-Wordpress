@@ -26,7 +26,7 @@ The BLIP is a beautiful creative free WordPress blog theme. It is fully responsi
 1. First: Create page.
 2. Second: Go to Setting -> Reading -> Front page displays -> A static page (select below) Select page that create.
 3. Third: Appearance -> Customizer -> Front Page Settings. Here you can add widgets on sections.
-For more Guide: https://docs.themesarray.com/theme_documentation/the-words/
+For more Guide: https://docs.themesarray.com/theme_documentation/the-blip/
 
 == Copyright ==
 

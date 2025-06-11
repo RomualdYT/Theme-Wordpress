@@ -1,10 +1,10 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
+ * Modèle pour la page 404.
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
 get_header();
@@ -16,7 +16,7 @@ get_header();
 			<section class="error-404 not-found">
 
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'the-words' ); ?></h1>
+                                        <h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'the-blip' ); ?></h1>
 				</header><!-- .page-header -->
 
 			</section><!-- .error-404 -->
