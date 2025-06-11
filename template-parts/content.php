@@ -1,10 +1,10 @@
 <?php
 /**
- * Template part for displaying posts
+ * Partie de modèle pour afficher les articles.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package The_Words
+ * @package The_BLIP
  */
 $ta_archive_layout = get_theme_mod('ta_archive_layout','simple');
 $ed_post_excerpt = get_theme_mod('ed_post_excerpt',1);
@@ -28,13 +28,13 @@ if(  $ta_archive_layout == 'masonry' ){
 		$ta_archive_layout = get_theme_mod('ta_archive_layout','simple');
 
 		if( $ta_archive_layout == 'simple' && $global_sidebar_layout == 'no-sidebar' ){
-			$image_size = 'the-words-full';
+                 $image_size = 'the-blip-full';
 		}elseif( $ta_archive_layout == 'simple' && $global_sidebar_layout != 'no-sidebar' ){
-			$image_size = 'the-words-full';
+                 $image_size = 'the-blip-full';
 		}elseif( $ta_archive_layout == 'masonry' ){
 			$image_size = 'medium_large';
 		}else{
-			$image_size = 'the-words-grid';
+                 $image_size = 'the-blip-grid';
 		}
 		if( $ta_archive_layout == 'simple' ){
 			$trim_word = '100';
@@ -83,9 +83,9 @@ if(  $ta_archive_layout == 'masonry' ){
 						echo '<div class="ta-content-wraper">';
 
 							the_content( sprintf(
-								wp_kses(
-									/* translators: %s: Name of current post. Only visible to screen readers */
-									__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'the-words' ),
+                                                                wp_kses(
+                                                                        /* translators: %s: Name of current post. Only visible to screen readers */
+                                                                        __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'the-blip' ),
 									array(
 										'span' => array(
 											'class' => array(),
@@ -112,7 +112,7 @@ if(  $ta_archive_layout == 'masonry' ){
 					endif;
 					
 					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'the-words' ),
+                                                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'the-blip' ),
 						'after'  => '</div>',
 					) );
 					?>

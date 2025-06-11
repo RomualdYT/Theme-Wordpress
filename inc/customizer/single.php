@@ -1,13 +1,13 @@
 <?php
 /**
- * The BLIP Footer Optionl
+ * Options pour les articles seuls.
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
 $wp_customize->add_section( 'single_post_section',
     array(
-    'title'      => esc_html__( 'Post Setting', 'the-words' ),
+    'title'      => esc_html__( 'Post Setting', 'the-blip' ),
     'capability' => 'edit_theme_options',
     'panel'      => 'theme_option_panel',
     )
@@ -22,8 +22,8 @@ $wp_customize->add_setting('ed_author_box',
 );
 $wp_customize->add_control('ed_author_box',
     array(
-        'label' => esc_html__('Enable Author Box', 'the-words'),
-        'description' => esc_html__('This option will work for single posts author box.', 'the-words'),
+        'label' => esc_html__('Enable Author Box', 'the-blip'),
+        'description' => esc_html__('This option will work for single posts author box.', 'the-blip'),
         'section' => 'single_post_section',
         'type' => 'checkbox',
     )
@@ -38,8 +38,8 @@ $wp_customize->add_setting('ed_related_posts',
 );
 $wp_customize->add_control('ed_related_posts',
     array(
-        'label' => esc_html__('Enable Related Posts', 'the-words'),
-        'description' => esc_html__('This option will work for single post related post.', 'the-words'),
+        'label' => esc_html__('Enable Related Posts', 'the-blip'),
+        'description' => esc_html__('This option will work for single post related post.', 'the-blip'),
         'section' => 'single_post_section',
         'type' => 'checkbox',
     )
@@ -47,14 +47,14 @@ $wp_customize->add_control('ed_related_posts',
 
 $wp_customize->add_setting('ed_related_post_title',
     array(
-        'default' => esc_html__('Related Posts', 'the-words'),
+        'default' => esc_html__('Related Posts', 'the-blip'),
         'capability' => 'edit_theme_options',
         'sanitize_callback' => 'sanitize_text_field',
     )
 );
 $wp_customize->add_control('ed_related_post_title',
     array(
-        'label' => esc_html__('Related Posts Section Title', 'the-words'),
+        'label' => esc_html__('Related Posts Section Title', 'the-blip'),
         'section' => 'single_post_section',
         'type' => 'text',
     )
@@ -69,8 +69,8 @@ $wp_customize->add_setting('ed_post_category',
 );
 $wp_customize->add_control('ed_post_category',
     array(
-        'label' => esc_html__('Enable Category', 'the-words'),
-        'description' => esc_html__('This option will work for all posts.', 'the-words'),
+        'label' => esc_html__('Enable Category', 'the-blip'),
+        'description' => esc_html__('This option will work for all posts.', 'the-blip'),
         'section' => 'single_post_section',
         'type' => 'checkbox',
     )
@@ -85,8 +85,8 @@ $wp_customize->add_setting('ed_post_author',
 );
 $wp_customize->add_control('ed_post_author',
     array(
-        'label' => esc_html__('Enable Author', 'the-words'),
-        'description' => esc_html__('This option will work for all posts.', 'the-words'),
+        'label' => esc_html__('Enable Author', 'the-blip'),
+        'description' => esc_html__('This option will work for all posts.', 'the-blip'),
         'section' => 'single_post_section',
         'type' => 'checkbox',
     )
@@ -101,8 +101,8 @@ $wp_customize->add_setting('ed_post_date',
 );
 $wp_customize->add_control('ed_post_date',
     array(
-        'label' => esc_html__('Enable Posted Date', 'the-words'),
-        'description' => esc_html__('This option will work for all posts.', 'the-words'),
+        'label' => esc_html__('Enable Posted Date', 'the-blip'),
+        'description' => esc_html__('This option will work for all posts.', 'the-blip'),
         'section' => 'single_post_section',
         'type' => 'checkbox',
     )
@@ -117,8 +117,8 @@ $wp_customize->add_setting('ed_post_excerpt',
 );
 $wp_customize->add_control('ed_post_excerpt',
     array(
-        'label' => esc_html__('Enable Post Excerpt', 'the-words'),
-        'description' => esc_html__('This option will work for all posts.', 'the-words'),
+        'label' => esc_html__('Enable Post Excerpt', 'the-blip'),
+        'description' => esc_html__('This option will work for all posts.', 'the-blip'),
         'section' => 'single_post_section',
         'type' => 'checkbox',
     )

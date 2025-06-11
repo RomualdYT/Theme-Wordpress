@@ -1,14 +1,14 @@
 <?php
 /**
- * Define fields for Widgets.
- * 
- * @package The_Words
+ * Définition des champs pour les widgets.
+ *
+ * @package The_BLIP
  */
 
 function the_words_widgets_show_widget_field( $instance = '', $widget_field = '', $athm_field_value = '' ) {
 	$the_words_pagelist[0] = array(
         'value' => 0,
-        'label' => esc_html__('--choose--','the-words')
+        'label' => esc_html__('--choose--','the-blip')
     );
     $the_words_pages = get_pages();
     foreach($the_words_pages as $the_words_page) :
@@ -137,19 +137,19 @@ function the_words_widgets_show_widget_field( $instance = '', $widget_field = ''
 				$output .= '<br />';
 				$output .=  '<small>'. esc_html($the_words_widgets_description).'</small>';
             }
-            $output .= '<input id="' . $id . '" class="upload' . $class . '" type="text" name="' . $name . '" value="' . esc_attr( $value ) . '" placeholder="' . esc_html__( 'No file chosen', 'the-words' ) . '" />' . "\n";
+            $output .= '<input id="' . $id . '" class="upload' . $class . '" type="text" name="' . $name . '" value="' . esc_attr( $value ) . '" placeholder="' . esc_html__( 'No file chosen', 'the-blip' ) . '" />' . "\n";
             if (function_exists('wp_enqueue_media')) {
                 
-				$output .= '<input id="upload-' . $id . '" class="upload-button button" type="button" value="' . esc_html__('Upload', 'the-words') . '" />' . "\n";
+				$output .= '<input id="upload-' . $id . '" class="upload-button button" type="button" value="' . esc_html__('Upload', 'the-blip') . '" />' . "\n";
 
             } else {
-                $output .= '<p><i>' . esc_html__('Upgrade your version of WordPress for full media support.', 'the-words') . '</i></p>';
+                $output .= '<p><i>' . esc_html__('Upgrade your version of WordPress for full media support.', 'the-blip') . '</i></p>';
             }
 
             $output .= '<div class="screenshot team-thumb" id="' . $id . '-image">' . "\n";
 
             if ($value != '') {
-                $remove = '<a class="remove-image remove-screenshot">'.esc_html__('Remove','the-words').'</a>';
+                $remove = '<a class="remove-image remove-screenshot">'.esc_html__('Remove','the-blip').'</a>';
                 $attachment_id = attachment_url_to_postid($value);
 
                 $image_array = wp_get_attachment_image_src($attachment_id, 'medium');
@@ -166,7 +166,7 @@ function the_words_widgets_show_widget_field( $instance = '', $widget_field = ''
                     $output .= '';
 
                     // Standard generic output if it's not an image.
-                    $title = esc_html__('View File', 'the-words');
+                    $title = esc_html__('View File', 'the-blip');
                     $output .= '<div class="no-image"><span class="file_link"><a href="' . esc_url( $value ) . '" target="_blank" rel="external">' . esc_html( $title ) . '</a></span></div>';
                 }
             }

@@ -1,11 +1,11 @@
 <?php
 /**
- * @package The_Words
+ * @package The_BLIP
  */
 
 $wp_customize->add_section( 'ta_preloader_section',
     array(
-    'title'      => esc_html__( 'Preloader Setting', 'the-words' ),
+    'title'      => esc_html__( 'Preloader Setting', 'the-blip' ),
     'capability' => 'edit_theme_options',
     'panel'      => 'theme_option_panel',
     )
@@ -20,7 +20,7 @@ $wp_customize->add_setting('ed_preloader',
 );
 $wp_customize->add_control('ed_preloader',
     array(
-        'label' => esc_html__('Enable Preloader', 'the-words'),
+        'label' => esc_html__('Enable Preloader', 'the-blip'),
         'section' => 'ta_preloader_section',
         'type' => 'checkbox',
     )

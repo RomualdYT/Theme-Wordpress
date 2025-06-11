@@ -1,13 +1,13 @@
 <?php
 /**
- * The BLIP Footer Optionl
+ * Options de pied de page.
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
 $wp_customize->add_section( 'footer_section',
     array(
-    'title'      => esc_html__( 'Footer Setting', 'the-words' ),
+    'title'      => esc_html__( 'Footer Setting', 'the-blip' ),
     'capability' => 'edit_theme_options',
     'panel'      => 'theme_option_panel',
     )
@@ -23,7 +23,7 @@ $wp_customize->add_control( new WP_Customize_Image_Control(
     $wp_customize,
     'footer_background_image',
         array(
-            'label'      => esc_html__( 'Footer Background Image', 'the-words' ),
+            'label'      => esc_html__( 'Footer Background Image', 'the-blip' ),
             'section'    => 'footer_section',
         )
     )
@@ -32,14 +32,14 @@ $wp_customize->add_control( new WP_Customize_Image_Control(
 $wp_customize->add_setting(
 	'footer_copyright_text',
     array(
-        'default' => esc_html__( 'Copyright All rights reserved', 'the-words' ),
+        'default' => esc_html__( 'Copyright All rights reserved', 'the-blip' ),
         'sanitize_callback' => 'sanitize_text_field'
     )
 );
 $wp_customize->add_control(
 	'footer_copyright_text',
     array(
-        'label' => esc_html__('Footer Copyright Text','the-words'),
+        'label' => esc_html__('Footer Copyright Text','the-blip'),
         'type' => 'text',
         'section' => 'footer_section'
     )
@@ -54,7 +54,7 @@ $wp_customize->add_setting('ed_footer_go_top_button',
 );
 $wp_customize->add_control('ed_footer_go_top_button',
     array(
-        'label' => esc_html__('Enable Scroll to Top Button', 'the-words'),
+        'label' => esc_html__('Enable Scroll to Top Button', 'the-blip'),
         'section' => 'footer_section',
         'type' => 'checkbox',
     )

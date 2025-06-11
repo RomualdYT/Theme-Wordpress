@@ -1,10 +1,10 @@
 <?php
 /**
- * The template for displaying archive pages
+ * Modèle pour les pages d'archive.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
 get_header();

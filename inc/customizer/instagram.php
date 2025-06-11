@@ -1,13 +1,13 @@
 <?php
 /**
- * The BLIP Subscribe
+ * Section Instagram.
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
 $wp_customize->add_section( 'instagram_section',
     array(
-    'title'      => esc_html__( 'Instagram Section', 'the-words' ),
+    'title'      => esc_html__( 'Instagram Section', 'the-blip' ),
     'capability' => 'edit_theme_options',
     'panel'      => 'the_words_home_panel',
     )
@@ -22,7 +22,7 @@ $wp_customize->add_setting('ed_instagram_section',
 );
 $wp_customize->add_control('ed_instagram_section',
     array(
-        'label' => esc_html__('Enable Instagram Section', 'the-words'),
+        'label' => esc_html__('Enable Instagram Section', 'the-blip'),
         'section' => 'instagram_section',
         'type' => 'checkbox',
     )
@@ -37,8 +37,8 @@ $wp_customize->add_setting('instagram_shortcode',
 );
 $wp_customize->add_control('instagram_shortcode',
     array(
-        'label' => esc_html__('Instagram Shortcode', 'the-words'),
-        'description' => esc_html__('Please install "Social Feed Gallery" plugin for Instagram Feed.', 'the-words'),
+        'label' => esc_html__('Instagram Shortcode', 'the-blip'),
+        'description' => esc_html__('Please install "Social Feed Gallery" plugin for Instagram Feed.', 'the-blip'),
         'section' => 'instagram_section',
         'type' => 'text',
     )
@@ -53,8 +53,8 @@ $wp_customize->add_setting('ed_show_on_home_only',
 );
 $wp_customize->add_control('ed_show_on_home_only',
     array(
-        'label' => esc_html__('Show on Hompage Only', 'the-words'),
-        'description' => esc_html__('By enabling option you can show instagram feed only on home page.', 'the-words'),
+        'label' => esc_html__('Show on Hompage Only', 'the-blip'),
+        'description' => esc_html__('By enabling option you can show instagram feed only on home page.', 'the-blip'),
         'section' => 'instagram_section',
         'type' => 'checkbox',
     )

@@ -1,6 +1,6 @@
 <?php
 /**
- * @package The_Words
+ * @package The_BLIP
  */
 
 add_action('widgets_init', 'the_words_author_register');
@@ -13,8 +13,8 @@ class The_Words_Author_Widget extends WP_Widget {
 
     public function __construct() {
         parent::__construct(
-                'The_Words_Author_Widget', esc_html__('TA : Author Box', 'the-words'), array(
-                'description' => esc_html__('This Widget show Author Profile', 'the-words')
+                'The_Words_Author_Widget', esc_html__('TA : Author Box', 'the-blip'), array(
+                'description' => esc_html__('This Widget show Author Profile', 'the-blip')
                 )
         );
     }
@@ -28,37 +28,37 @@ class The_Words_Author_Widget extends WP_Widget {
         $fields = array(
             'ta_author_name' => array(
                 'the_words_widgets_name' => 'ta_author_name',
-                'the_words_widgets_title' => esc_html__('Author Name', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Author Name', 'the-blip'),
                 'the_words_widgets_field_type' => 'text',
             ),
             'ta_author_desc' => array(
                 'the_words_widgets_name' => 'ta_author_desc',
-                'the_words_widgets_title' => esc_html__('Author Words', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Author Words', 'the-blip'),
                 'the_words_widgets_field_type' => 'textarea',
             ),
             'ta_author_image' => array(
                 'the_words_widgets_name' => 'ta_author_image',
-                'the_words_widgets_title' => esc_html__('Author Image', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Author Image', 'the-blip'),
                 'the_words_widgets_field_type' => 'upload',
             ),
             'ta_author_facebook' => array(
                 'the_words_widgets_name' => 'ta_author_facebook',
-                'the_words_widgets_title' => esc_html__('Facebook Link', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Facebook Link', 'the-blip'),
                 'the_words_widgets_field_type' => 'text',
             ),
             'ta_author_twitter' => array(
                 'the_words_widgets_name' => 'ta_author_twitter',
-                'the_words_widgets_title' => esc_html__('Twitter Link', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Twitter Link', 'the-blip'),
                 'the_words_widgets_field_type' => 'text',
             ),
             'ta_author_youtube' => array(
                 'the_words_widgets_name' => 'ta_author_youtube',
-                'the_words_widgets_title' => esc_html__('Youtube Link', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Youtube Link', 'the-blip'),
                 'the_words_widgets_field_type' => 'text',
             ),
             'ta_author_instagram' => array(
                 'the_words_widgets_name' => 'ta_author_instagram',
-                'the_words_widgets_title' => esc_html__('Instagram Link', 'the-words'),
+                'the_words_widgets_title' => esc_html__('Instagram Link', 'the-blip'),
                 'the_words_widgets_field_type' => 'text',
             ),
         );

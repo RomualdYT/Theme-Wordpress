@@ -1,15 +1,12 @@
 <?php
 /**
- * The template for displaying all pages
+ * Modèle pour l'affichage des pages.
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * Utilisé pour toutes les pages par défaut.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
 get_header();

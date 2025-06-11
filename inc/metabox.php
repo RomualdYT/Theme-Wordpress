@@ -11,7 +11,7 @@
  function  the_words_post_meta_options() {
     add_meta_box(
                 'the_words_post_meta',
-                esc_html__( 'Sidebar Layouts', 'the-words' ),
+                esc_html__( 'Sidebar Layouts', 'the-blip' ),
                 'the_words_post_meta_callback',
                 'post', 
                 'normal', 
@@ -19,7 +19,7 @@
             );
             add_meta_box(
                 'the_words_page_meta',
-                esc_html__( 'Sidebar', 'the-words' ),
+                esc_html__( 'Sidebar', 'the-blip' ),
                 'the_words_post_meta_callback',
                 'page',
                 'normal', 
@@ -30,19 +30,19 @@
 
  $the_words_post_sidebar_options = array(
         'global' => array(
-                        'label'     => esc_html__( 'Global sidebar', 'the-words' ),
+                        'label'     => esc_html__( 'Global sidebar', 'the-blip' ),
                         'thumbnail' => get_template_directory_uri() . '/assets/images/both-sidebar.png'
                     ), 
         'left-sidebar' => array(
-                        'label'     => esc_html__( 'Left sidebar', 'the-words' ),
+                        'label'     => esc_html__( 'Left sidebar', 'the-blip' ),
                         'thumbnail' => get_template_directory_uri() . '/assets/images/left-sidebar.png'
                     ), 
         'right-sidebar' => array(
-                        'label' => esc_html__( 'Right sidebar', 'the-words' ),
+                        'label' => esc_html__( 'Right sidebar', 'the-blip' ),
                         'thumbnail' => get_template_directory_uri() . '/assets/images/right-sidebar.png'
                     ),
         'no-sidebar' => array(
-                        'label'     => esc_html__( 'No sidebar', 'the-words' ),
+                        'label'     => esc_html__( 'No sidebar', 'the-blip' ),
                         'thumbnail' => get_template_directory_uri() . '/assets/images/no-sidebar.png'
                     ),
     );
@@ -61,7 +61,7 @@ if( ! function_exists( 'the_words_post_meta_callback' ) ):
 
         <table class="form-table">
             <tr>
-                <td colspan="4"><em class="f13"><?php esc_html_e('Choose Sidebar Template','the-words'); ?></em></td>
+                <td colspan="4"><em class="f13"><?php esc_html_e('Choose Sidebar Template','the-blip'); ?></em></td>
             </tr>
 
             <tr>

@@ -1,8 +1,8 @@
 <?php
 /**
- * Functions which enhance the theme by hooking into WordPress
+ * Fonctions qui améliorent le thème via les hooks WordPress.
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
 /**

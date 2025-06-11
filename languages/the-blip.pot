@@ -279,9 +279,6 @@ msgstr ""
 msgid "Global Sidebar Layout"
 msgstr ""
 
-#: inc/customizer/customizer.php:128
-msgid "Go Pro"
-msgstr ""
 
 #: inc/customizer/front-page.php:12
 msgid "Header Banner"
@@ -317,7 +314,7 @@ msgid "https://themesarray.com/"
 msgstr ""
 
 #. URI of the theme
-msgid "https://themesarray.com/wordpress_themes/the-words/"
+msgid "https://themesarray.com/wordpress_themes/the-blip/"
 msgstr ""
 
 #: inc/customizer/social-icon.php:85
@@ -695,9 +692,6 @@ msgstr ""
 msgid "Twitter Link"
 msgstr ""
 
-#: inc/customizer/customizer.php:127
-msgid "Upgrade to The BLIP Pro"
-msgstr ""
 
 #: inc/widgets/widget-fields.php:146
 msgid "Upgrade your version of WordPress for full media support."
