@@ -623,21 +623,21 @@ msgid "Telegram "
 msgstr ""
 
 #. Name of the theme
-msgid "The Words"
+msgid "The BLIP"
 msgstr ""
 
 #: footer.php:82
 #, php-format
-msgid "The Words - By %1$s."
+msgid "The BLIP - By %1$s."
 msgstr ""
 
 #. Description of the theme
 msgid ""
-"The Words is a beautiful creative free responsive blog WordPress theme. It "
+"The BLIP is a beautiful creative free responsive blog WordPress theme. It "
 "is fully responsive and works perfectly on all type of devices like mobiles, "
-"tablets, laptops, and all kinds of browser.  The Words is very easy to use "
+"tablets, laptops, and all kinds of browser.  The BLIP is very easy to use "
 "and customize the theme. This theme is made for any search engine, SEO "
-"Compatible.  The Words is lightweight and can be used to run a blog, travel "
+"Compatible.  The BLIP is lightweight and can be used to run a blog, travel "
 "journals, personal blogs and other."
 msgstr ""
 
@@ -696,7 +696,7 @@ msgid "Twitter Link"
 msgstr ""
 
 #: inc/customizer/customizer.php:127
-msgid "Upgrade to The Words Pro"
+msgid "Upgrade to The BLIP Pro"
 msgstr ""
 
 #: inc/widgets/widget-fields.php:146

@@ -1,6 +1,6 @@
 <?php
 /**
- * The Words functions and definitions
+ * The BLIP functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -24,7 +24,7 @@ if ( ! function_exists( 'the_words_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on The Words, use a find and replace
+		 * If you're building a theme based on The BLIP, use a find and replace
 		 * to change 'the-words' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'the-words', get_template_directory() . '/languages' );

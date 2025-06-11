@@ -1,6 +1,6 @@
 <?php
 /**
- * The Words Footer Optionl
+ * The BLIP Footer Optionl
  *
  * @package The_Words
  */

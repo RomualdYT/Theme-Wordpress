@@ -1,6 +1,6 @@
 <?php
 /**
- * The Words Subescribe
+ * The BLIP Subescribe
  *
  * @package The_Words
  */
