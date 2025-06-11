@@ -1,7 +1,11 @@
-<?php
-/**
- * The Words Footer Optionl
- *
+ * The BLIP! Footer Optionl
+ * @package The_BLIP
+    'title'      => esc_html__( 'Paramètres du pied de page', 'the-blip' ),
+            'label'      => esc_html__( "Image d'arrière-plan du pied de page", 'the-blip' ),
+        'default' => esc_html__( 'Tous droits réservés', 'the-blip' ),
+        'label' => esc_html__('Texte de copyright du pied de page','the-blip'),
+        'label' => esc_html__('Activer le bouton Retour en haut', 'the-blip'),
+
  * @package The_Words
  */
 

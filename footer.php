@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
     /**
@@ -25,18 +25,18 @@
         $ed_footer_social_icon = get_theme_mod('ed_footer_social_icon',1);
         $footer_background_image = get_theme_mod('footer_background_image');
         if( 
-        	is_active_sidebar('the-words-footer-1') || 
-            is_active_sidebar('the-words-footer-2') || 
-            is_active_sidebar('the-words-footer-3') || 
+        	is_active_sidebar('the-blip-footer-1') || 
+            is_active_sidebar('the-blip-footer-2') || 
+            is_active_sidebar('the-blip-footer-3') || 
         	$ed_footer_social_icon){
             echo '<div class="top-footer" style="background-image:url('.esc_url( $footer_background_image ).')">';
             echo '<div class="ta-container clearfix">';
 
-            if( has_nav_menu('the-words-footer-menu') ):
+            if( has_nav_menu('the-blip-footer-menu') ):
 
             	echo '<div class="ta-footer-menu">';
 	            wp_nav_menu( array(
-					'theme_location' => 'the-words-footer-menu',
+					'theme_location' => 'the-blip-footer-menu',
 					'menu_id'        => 'footer-menu',
 					'depth'			 => 1,
 				) );
@@ -50,14 +50,14 @@
 				echo '</div>';
 			}
 
-            if( is_active_sidebar('the-words-footer-1') || is_active_sidebar('the-words-footer-2') || is_active_sidebar('the-words-footer-3') ){
+            if( is_active_sidebar('the-blip-footer-1') || is_active_sidebar('the-blip-footer-2') || is_active_sidebar('the-blip-footer-3') ){
 
     			echo '<div class="footer-widget-area">';
                 for ($x = 0; $x <= 3; $x++) {
-                    if( is_active_sidebar('the-words-footer-'.$x) ){
+                    if( is_active_sidebar('the-blip-footer-'.$x) ){
 
                         echo '<div id="ta-footer-widget-'.$x.'" class="ta-footer-widget">';
-                            dynamic_sidebar('the-words-footer-'.$x);
+                            dynamic_sidebar('the-blip-footer-'.$x);
                         echo '</div>';
 
                     }

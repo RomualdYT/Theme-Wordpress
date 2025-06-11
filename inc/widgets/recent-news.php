@@ -1,7 +1,11 @@
-<?php
-/**
- * @package The Words
- */
+ * @package The BLIP!
+				'The_Words_Recent_Posts_Widget', esc_html__('TA : Sidebar Recent Posts', 'the-blip'), array(
+				'description' => esc_html__('This Widget show Recent Posts', 'the-blip')
+					'the_words_widgets_title' => esc_html__('Title', 'the-blip'),
+					'the_words_widgets_default_value' => esc_html__('Recent Posts', 'the-blip'),
+					'the_words_widgets_title' => esc_html__('Blog Category', 'the-blip'),
+					'the_words_widgets_title' => esc_html__('Recent Blog Posts Number', 'the-blip'),
+
 
 add_action('widgets_init', 'the_words_recent_post_register');
 

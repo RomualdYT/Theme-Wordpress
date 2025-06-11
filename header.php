@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package The_Words
+ * @package The_BLIP
  */
 
 ?>
@@ -44,7 +44,7 @@
 	<?php } ?>
 
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'the-words' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'the-blip' ); ?></a>
 
 		<?php 
 		$ta_header_layout = get_theme_mod('ta_header_layout',1);

@@ -117,11 +117,16 @@ class Breadcrumb_Trail {
 	 *     @type bool      $show_title     Whether to show the title (last item) in the trail.
 	 *     @type bool      $show_browse    Whether to show the breadcrumb menu header.
 	 *     @type array     $labels         Text labels. @see Breadcrumb_Trail::set_labels()
-	 *     @type array     $post_taxonomy  Taxonomies to use for post types. @see Breadcrumb_Trail::set_post_taxonomy()
-	 *     @type bool      $echo           Whether to print or return the breadcrumbs.
-	 * }
-	 * @return void
-	 */
+			'browse'              => esc_html__( 'Browse:',                               'the-blip' ),
+			'aria_label'          => esc_attr_x( 'Breadcrumbs', 'breadcrumbs aria label', 'the-blip' ),
+			'home'                => esc_html__( 'Home',                                  'the-blip' ),
+			'error_404'           => esc_html__( '404 Not Found',                         'the-blip' ),
+			'archives'            => esc_html__( 'Archives',                              'the-blip' ),
+			'search'              => esc_html__( 'Search results for: %s',                'the-blip' ),
+			'paged'               => esc_html__( 'Page %s',                               'the-blip' ),
+			'paged_comments'      => esc_html__( 'Comment Page %s',                       'the-blip' ),
+			'archive_minute'      => esc_html__( 'Minute %s',                             'the-blip' ),
+			'archive_week'        => esc_html__( 'Week %s',                               'the-blip' ),
 	public function __construct( $args = array() ) {
 
 		$defaults = array(
@@ -354,12 +359,18 @@ class Breadcrumb_Trail {
 				elseif ( get_query_var( 'minute' ) && get_query_var( 'hour' ) )
 					$this->add_minute_hour_archive_items();
 
-				elseif ( get_query_var( 'minute' ) )
-					$this->add_minute_archive_items();
-
-				elseif ( get_query_var( 'hour' ) )
-					$this->add_hour_archive_items();
-
+			$this->items[] = sprintf( $this->labels['archive_minute_hour'], get_the_time( esc_html_x( 'g:i a', 'minute and hour archives time format', 'the-blip' ) ) );
+			$this->items[] = sprintf( $this->labels['archive_minute'], get_the_time( esc_html_x( 'i', 'minute archives time format', 'the-blip' ) ) );
+			$this->items[] = sprintf( $this->labels['archive_hour'], get_the_time( esc_html_x( 'g a', 'hour archives time format', 'the-blip' ) ) );
+		$year  = sprintf( $this->labels['archive_year'],  get_the_time( esc_html_x( 'Y', 'yearly archives date format',  'the-blip' ) ) );
+		$month = sprintf( $this->labels['archive_month'], get_the_time( esc_html_x( 'F', 'monthly archives date format', 'the-blip' ) ) );
+		$day   = sprintf( $this->labels['archive_day'],   get_the_time( esc_html_x( 'j', 'daily archives date format',   'the-blip' ) ) );
+		$year = sprintf( $this->labels['archive_year'],  get_the_time( esc_html_x( 'Y', 'yearly archives date format', 'the-blip' ) ) );
+		$week = sprintf( $this->labels['archive_week'],  get_the_time( esc_html_x( 'W', 'weekly archives date format', 'the-blip' ) ) );
+		$year  = sprintf( $this->labels['archive_year'],  get_the_time( esc_html_x( 'Y', 'yearly archives date format',  'the-blip' ) ) );
+		$month = sprintf( $this->labels['archive_month'], get_the_time( esc_html_x( 'F', 'monthly archives date format', 'the-blip' ) ) );
+		$year  = sprintf( $this->labels['archive_year'],  get_the_time( esc_html_x( 'Y', 'yearly archives date format',  'the-blip' ) ) );
+
 				elseif ( is_day() )
 					$this->add_day_archive_items();
 
@@ -590,8 +601,9 @@ class Breadcrumb_Trail {
 					// Reverse the array of matches to search for posts in the proper order.
 					$matches = array_reverse( $matches );
 
-					// Loop through each of the path matches.
-					foreach ( $matches as $match ) {
+					// Loop through each of the path matches.					$this->items[] = sprintf( '<a href="%s">%s</a>', esc_url( get_year_link( get_the_time( 'Y', $post_id ) ) ), sprintf( $this->labels['archive_year'], get_the_time( esc_html_x( 'Y', 'yearly archives date format',  'the-blip' ) ) ) );
+					$this->items[] = sprintf( '<a href="%s">%s</a>', esc_url( get_month_link( get_the_time( 'Y', $post_id ), get_the_time( 'm', $post_id ) ) ), sprintf( $this->labels['archive_month'], get_the_time( esc_html_x( 'F', 'monthly archives date format', 'the-blip' ) ) ) );
+					$this->items[] = sprintf( '<a href="%s">%s</a>', esc_url( get_day_link( get_the_time( 'Y', $post_id ), get_the_time( 'm', $post_id ), get_the_time( 'd', $post_id ) ) ), sprintf( $this->labels['archive_day'], get_the_time( esc_html_x( 'j', 'daily archives date format', 'the-blip' ) ) ) );
 
 						// If a match is found.
 						$slug = $match;

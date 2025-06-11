@@ -1,4 +1,5 @@
-<?php
+ * @package The_BLIP
+					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'the-blip' ); ?></h1>
 /**
  * The template for displaying 404 pages (not found)
  *

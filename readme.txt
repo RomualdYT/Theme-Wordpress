@@ -1,6 +1,9 @@
-=== The Words ===
-
-Contributors: themearray
+=== The BLIP! ===
+A starter theme called The BLIP!.
+The BLIP! is a beautiful creative free WordPress blog theme. It is fully responsive and works perfectly on all type of devices like mobiles, tablets, laptops, and all kinds of browser.  The BLIP! is very easy to use and customize the theme. This theme is made for any search engine, SEO Compatible.  The BLIP! is lightweight and can be used to run a blog, travel journals, personal blogs and other.
+For more Guide: https://docs.themesarray.com/theme_documentation/the-blip/
+The BLIP! WordPress Theme, Copyright 2020 https://themesarray.com
+The BLIP! is distributed under the terms of the GNU GPL
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, two-columns, right-sidebar, grid-layout, footer-widgets, rtl-language-support, theme-options, blog 
 Tested up to: 6.3
 Requires at least: 4.5

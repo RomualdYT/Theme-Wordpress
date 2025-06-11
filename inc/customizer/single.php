@@ -1,12 +1,21 @@
-<?php
-/**
- * The Words Footer Optionl
- *
- * @package The_Words
- */
-
-$wp_customize->add_section( 'single_post_section',
-    array(
+ * The BLIP! Footer Optionl
+ * @package The_BLIP
+    'title'      => esc_html__( "Paramètres de l'article", 'the-blip' ),
+        'label' => esc_html__('Activer la boîte auteur', 'the-blip'),
+        'description' => esc_html__('Option pour afficher la boîte auteur sur les articles.', 'the-blip'),
+        'label' => esc_html__('Activer les articles similaires', 'the-blip'),
+        'description' => esc_html__('Option pour afficher des articles similaires.', 'the-blip'),
+        'default' => esc_html__('Articles similaires', 'the-blip'),
+        'label' => esc_html__('Titre de la section des articles similaires', 'the-blip'),
+        'label' => esc_html__('Activer la catégorie', 'the-blip'),
+        'description' => esc_html__('Option valable pour tous les articles.', 'the-blip'),
+        'label' => esc_html__('Afficher l\'auteur', 'the-blip'),
+        'description' => esc_html__('Option valable pour tous les articles.', 'the-blip'),
+        'label' => esc_html__('Afficher la date de publication', 'the-blip'),
+        'description' => esc_html__('Option valable pour tous les articles.', 'the-blip'),
+        'label' => esc_html__('Afficher l\'extrait', 'the-blip'),
+        'description' => esc_html__('Option valable pour tous les articles.', 'the-blip'),
+
     'title'      => esc_html__( 'Post Setting', 'the-words' ),
     'capability' => 'edit_theme_options',
     'panel'      => 'theme_option_panel',

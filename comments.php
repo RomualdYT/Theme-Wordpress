@@ -1,5 +1,7 @@
-<?php
-/**
+ * @package The_BLIP
+					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'the-blip' ),
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $the_words_comment_count, 'comments title', 'the-blip' ) ),
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'the-blip' ); ?></p>
  * The template for displaying comments
  *
  * This is the template that displays the area of the page that contains both the current comments

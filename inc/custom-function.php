@@ -1,4 +1,5 @@
-<?php
+ * @package The_BLIP
+
 /**
  * Custom Functions
  *
@@ -36,7 +37,7 @@ if( !function_exists('the_words_site_identity') ):
 
 			$enable_site_title = get_theme_mod('enable_site_title',1);
 
-			if( $enable_site_title ){
+			if( $enable_site_title ){			$avatar = get_avatar( get_the_author_meta( 'ID' ),'50','',esc_html__('Author Image','the-blip') );
 
 				if ( is_front_page() && is_home() ) : ?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -69,8 +70,10 @@ if ( ! function_exists( 'the_words_posted_on' ) ) :
 
 			$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 			if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-				$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-			}
+				$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'the-blip' ) );
+					printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'the-blip' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+							__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'the-blip' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'the-blip' ),
 
 			$time_string = sprintf( $time_string,
 				esc_attr( get_the_date( DATE_W3C ) ),
@@ -160,7 +163,7 @@ if ( ! function_exists( 'the_words_entry_footer' ) ) :
 					}
 
 				}
-
+	    $cat_array[] = esc_html__('--Choose Category--','the-blip');
 			}
 
 			if( $tags ){
@@ -247,8 +250,9 @@ if ( ! function_exists( 'the_words_post_thumbnail' ) ) :
 			) );
 			?>
 		</a>
-
-		<?php
+            $ed_related_post_title = get_theme_mod('ed_related_post_title',esc_html__( 'Related Posts','the-blip' ) ); ?>
+                            $the_words_related_image = wp_get_attachment_image_src( get_post_thumbnail_id(),'the-blip-grid' ); ?>
+
 		endif; // End is_singular().
 	}
 endif;
@@ -286,7 +290,8 @@ if( !function_exists('the_words_social_icon') ):
 				<?php if( $social_link_facebook ){ ?>
 					<a target="_blank" href="<?php echo esc_url( $social_link_facebook ); ?>"><i class="fab fa-facebook-f"></i></a>
 				<?php } ?>
-
+		$subscribe_form_title = get_theme_mod('subscribe_form_title',esc_html__('Subscribe Us For Latest News', 'the-blip'));
+		$subscribe_form_description = get_theme_mod('subscribe_form_description',esc_html__('It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.', 'the-blip'));
 				<?php if( $social_link_twitter ){ ?>
 					<a target="_blank" href="<?php echo esc_url( $social_link_twitter ); ?>"><i class="fab fa-twitter"></i></a>
 				<?php } ?>
@@ -329,7 +334,7 @@ if( !function_exists('the_words_social_icon') ):
 
 			</div>
 
-		<?php }
+		<?php }            'the-blip-primary-menu' => $main_menu->term_id, // replace 'main-menu' here with the menu location identifier from register_nav_menu() function in your theme.
 
 	}
 

@@ -1,5 +1,7 @@
-<?php
-/**
+ * @package The_BLIP
+        'label' => esc_html__('--choose--','the-blip')
+            echo '<div class="the-blip-multiple-checkbox">'; ?>
+
  * Define fields for Widgets.
  * 
  * @package The_Words
@@ -55,9 +57,12 @@ function the_words_widgets_show_widget_field( $instance = '', $widget_field = ''
             echo '<div class="the-words-multiple-checkbox">'; ?>
                     
                 <p>
-                    <input id="<?php echo esc_attr( $instance->get_field_id( $the_words_widgets_name ) ); ?>" name="<?php echo esc_attr($instance->get_field_name( $the_words_widgets_name )); ?>" type="checkbox" value="1" <?php checked('1', esc_attr($athm_field_value) ); ?>/>
-                    <label for="<?php echo esc_attr($instance->get_field_id( $the_words_widgets_name )); ?>"><?php echo esc_html($the_words_widgets_title); ?>:</label>
-                </p>
+            $output .= '<input id="' . $id . '" class="upload' . $class . '" type="text" name="' . $name . '" value="' . $value . '" placeholder="' . esc_html__('No file chosen', 'the-blip') . '" />' . "\n";
+				$output .= '<input id="upload-' . $id . '" class="upload-button button" type="button" value="' . esc_html__('Upload', 'the-blip') . '" />' . "\n";
+                $output .= '<p><i>' . esc_html__('Upgrade your version of WordPress for full media support.', 'the-blip') . '</i></p>';
+                $remove = '<a class="remove-image remove-screenshot">'.esc_html__('Remove','the-blip').'</a>';
+                    $title = esc_html__('View File', 'the-blip');
+
                 <?php
             echo '</div>';
             

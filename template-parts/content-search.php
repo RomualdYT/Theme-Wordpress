@@ -1,4 +1,5 @@
-<?php
+ * @package The_BLIP
+	<?php the_words_post_thumbnail('the-blip-grid'); ?>
 /**
  * Template part for displaying posts
  *

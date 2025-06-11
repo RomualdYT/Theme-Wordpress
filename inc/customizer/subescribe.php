@@ -1,9 +1,15 @@
-<?php
-/**
- * The Words Subescribe
- *
- * @package The_Words
- */
+ * The BLIP! Subescribe
+ * @package The_BLIP
+    'title'      => esc_html__( "Section d'abonnement", 'the-blip' ),
+        'label' => esc_html__('Activer la section d\'abonnement', 'the-blip'),
+        'default' => esc_html__('Abonnez-vous pour les dernières actualités', 'the-blip'),
+        'label' => esc_html__("Titre de la section d'abonnement", 'the-blip'),
+        'default' => esc_html__('Cette expression est issue de la littérature latine classique datant de 45 av. J.-C.', 'the-blip'),
+        'label' => esc_html__("Description de la section d'abonnement", 'the-blip'),
+        'label' => esc_html__('Shortcode du formulaire', 'the-blip'),
+        'description' => esc_html__('Installez le plugin "MC4WP: Mailchimp for WordPress" pour le formulaire.', 'the-blip'),
+        'label' => esc_html__('Afficher en haut', 'the-blip'),
+        'description' => esc_html__('Par défaut cette section apparaît en pied de page.', 'the-blip'),
 
 $wp_customize->add_section( 'subscribe_section',
     array(
