@@ -1,6 +1,6 @@
 <?php
 /**
- * The Words Theme Customizer
+ * The BLIP Theme Customizer
  *
  * @package The_Words
  */
@@ -86,7 +86,7 @@ function the_words_customize_register( $wp_customize ) {
 	require get_template_directory() . '/inc/customizer/subescribe.php';
 	require get_template_directory() . '/inc/customizer/instagram.php';
 	
-	/**  The Words Pro Link **/
+	/**  The BLIP Pro Link **/
     class The_Words_Link_Section extends WP_Customize_Section {
 
         public $type = 'the-words-pro';
@@ -114,7 +114,7 @@ function the_words_customize_register( $wp_customize ) {
         <?php }
     }
 
-	/** Upgrade to The Words Pro **/
+	/** Upgrade to The BLIP Pro **/
 
 	$wp_customize->register_section_type( 'The_Words_Link_Section' );
 
@@ -124,7 +124,7 @@ function the_words_customize_register( $wp_customize ) {
 	        $wp_customize,
 	        'the-words-pro',
 	        array(
-	            'title'    => esc_html__( 'Upgrade to The Words Pro', 'the-words' ),
+	            'title'    => esc_html__( 'Upgrade to The BLIP Pro', 'the-words' ),
 	            'pro_text' => esc_html__( 'Go Pro','the-words' ),
 	            'pro_url'  => 'https://themesarray.com/wordpress_themes/the-words-pro',
 	            'priority' => 1,

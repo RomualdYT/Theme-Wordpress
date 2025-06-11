@@ -2,7 +2,7 @@
 /**
  * Create a metabox to added some custom filed in posts.
  *
- * @package The Words
+ * @package The BLIP
  */
 
  add_action( 'add_meta_boxes', 'the_words_post_meta_options' );

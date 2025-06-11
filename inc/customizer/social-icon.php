@@ -1,6 +1,6 @@
 <?php
 /**
- * The Words Social Icons
+ * The BLIP Social Icons
  *
  * @package The_Words
  */

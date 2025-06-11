@@ -1,4 +1,4 @@
-=== The Words ===
+=== The BLIP ===
 
 Contributors: themearray
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, two-columns, right-sidebar, grid-layout, footer-widgets, rtl-language-support, theme-options, blog 
@@ -9,11 +9,11 @@ Stable tag: 1.1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called The Words.
+A starter theme called The BLIP.
 
 == Description ==
 
-The Words is a beautiful creative free WordPress blog theme. It is fully responsive and works perfectly on all type of devices like mobiles, tablets, laptops, and all kinds of browser.  The Words is very easy to use and customize the theme. This theme is made for any search engine, SEO Compatible.  The Words is lightweight and can be used to run a blog, travel journals, personal blogs and other.
+The BLIP is a beautiful creative free WordPress blog theme. It is fully responsive and works perfectly on all type of devices like mobiles, tablets, laptops, and all kinds of browser.  The BLIP is very easy to use and customize the theme. This theme is made for any search engine, SEO Compatible.  The BLIP is lightweight and can be used to run a blog, travel journals, personal blogs and other.
 
 
 == Installation ==
@@ -30,8 +30,8 @@ For more Guide: https://docs.themesarray.com/theme_documentation/the-words/
 
 == Copyright ==
 
-The Words WordPress Theme, Copyright 2020 https://themesarray.com
-The Words is distributed under the terms of the GNU GPL
+The BLIP WordPress Theme, Copyright 2020 https://themesarray.com
+The BLIP is distributed under the terms of the GNU GPL
 
 
 == Credits ==

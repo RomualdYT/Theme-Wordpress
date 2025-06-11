@@ -1,6 +1,6 @@
 <?php
 /**
- * The Words Header Optionl
+ * The BLIP Header Optionl
  *
  * @package The_Words
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * @package The Words
+ * @package The BLIP
  */
 
 add_action('widgets_init', 'the_words_recent_post_register');

@@ -1,6 +1,6 @@
 <?php
 /**
- * The Words Front Page Optionl
+ * The BLIP Front Page Optionl
  *
  * @package The_Words
  */

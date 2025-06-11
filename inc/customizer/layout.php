@@ -1,6 +1,6 @@
 <?php
 /**
- * The Words Layouts Optionl
+ * The BLIP Layouts Optionl
  *
  * @package The_Words
  */
