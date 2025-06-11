@@ -124,7 +124,7 @@ function the_words_widgets_show_widget_field( $instance = '', $widget_field = ''
             $id = esc_attr($instance->get_field_id($the_words_widgets_name));
             $class = '';
             $int = '';
-            $value = esc_html($athm_field_value);
+            $value = esc_html( $athm_field_value );
             $name = esc_attr($instance->get_field_name($the_words_widgets_name));
 
 
@@ -137,7 +137,7 @@ function the_words_widgets_show_widget_field( $instance = '', $widget_field = ''
 				$output .= '<br />';
 				$output .=  '<small>'. esc_html($the_words_widgets_description).'</small>';
             }
-            $output .= '<input id="' . $id . '" class="upload' . $class . '" type="text" name="' . $name . '" value="' . $value . '" placeholder="' . esc_html__('No file chosen', 'the-words') . '" />' . "\n";
+            $output .= '<input id="' . $id . '" class="upload' . $class . '" type="text" name="' . $name . '" value="' . esc_attr( $value ) . '" placeholder="' . esc_html__( 'No file chosen', 'the-words' ) . '" />' . "\n";
             if (function_exists('wp_enqueue_media')) {
                 
 				$output .= '<input id="upload-' . $id . '" class="upload-button button" type="button" value="' . esc_html__('Upload', 'the-words') . '" />' . "\n";
@@ -167,11 +167,11 @@ function the_words_widgets_show_widget_field( $instance = '', $widget_field = ''
 
                     // Standard generic output if it's not an image.
                     $title = esc_html__('View File', 'the-words');
-                    $output .= '<div class="no-image"><span class="file_link"><a href="' . $value . '" target="_blank" rel="external">' . $title . '</a></span></div>';
+                    $output .= '<div class="no-image"><span class="file_link"><a href="' . esc_url( $value ) . '" target="_blank" rel="external">' . esc_html( $title ) . '</a></span></div>';
                 }
             }
             $output .= '</div></div>' . "\n";
-            echo $output;
+            echo wp_kses_post( $output );
             break;
         
 	}
