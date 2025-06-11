@@ -15,14 +15,14 @@
 get_header();
 
 global $post;
-$global_sidebar_layout = get_theme_mod('global_page_sidebar_layout','right-sidebar');
+$global_sidebar_layout  = get_theme_mod( 'global_page_sidebar_layout', 'right-sidebar' );
 $the_words_post_sidebar = get_post_meta( $post->ID, 'the_words_post_sidebar_layout', true );
 
-if( $the_words_post_sidebar == 'global' || $the_words_post_sidebar == '' ){
+if ( 'global' === $the_words_post_sidebar || '' === $the_words_post_sidebar ) {
 
 	$sidebar = $global_sidebar_layout;
 
-}else{
+} else {
 	$sidebar = $the_words_post_sidebar;
 }
 
@@ -48,7 +48,10 @@ if( $the_words_post_sidebar == 'global' || $the_words_post_sidebar == '' ){
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php if( $sidebar != 'no-sidebar' ){ get_sidebar(); } ?>
+	<?php
+	if ( 'no-sidebar' !== $sidebar ) {
+			get_sidebar(); }
+	?>
 
 </div>
 <?php

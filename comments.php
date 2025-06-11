@@ -39,7 +39,7 @@ if ( post_password_required() ) {
 				printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
 					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $the_words_comment_count, 'comments title', 'the-words' ) ),
-					number_format_i18n( $the_words_comment_count ),
+					esc_html( number_format_i18n( $the_words_comment_count ) ),
 					'<span>' . esc_html( get_the_title() ) . '</span>'
 				);
 			}
@@ -50,10 +50,12 @@ if ( post_password_required() ) {
 
 		<ol class="comment-list">
 			<?php
-			wp_list_comments( array(
-				'style'      => 'ol',
-				'short_ping' => true,
-			) );
+			wp_list_comments(
+				array(
+					'style'      => 'ol',
+					'short_ping' => true,
+				)
+			);
 			?>
 		</ol><!-- .comment-list -->
 

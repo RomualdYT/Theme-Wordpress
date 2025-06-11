@@ -86,6 +86,9 @@ License: Creative Commons Zero (CC0) https://stocksnap.io/license
 - https://stocksnap.io/photo/writing-drawing-Y2P39NGLLO
 - https://stocksnap.io/photo/laptop-apple-N6NK9J8V0A
 
+== Development ==
+Run `vendor/bin/phpcs` to check coding standards. Rules are defined in `phpcs.xml` and follow WordPress Coding Standards. Install dependencies with `composer install`.
+
 == Changelog ==
 
 = 1.0.0 =

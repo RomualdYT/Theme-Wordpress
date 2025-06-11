@@ -8,15 +8,23 @@
  */
 
 get_header();
-$global_sidebar_layout = get_theme_mod('global_sidebar_layout','right-sidebar');
-$ta_archive_layout = get_theme_mod('ta_archive_layout','simple');
+$global_sidebar_layout = get_theme_mod( 'global_sidebar_layout', 'right-sidebar' );
+$ta_archive_layout     = get_theme_mod( 'ta_archive_layout', 'simple' );
 ?>
 <div class="ta-container clearfix">
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main <?php if( $ta_archive_layout == 'grid' || $ta_archive_layout == 'masonry' ){ echo 'ta-archive-grid-2 archive-'.esc_attr( $ta_archive_layout ); }else{ echo 'ta-archive-simple'; } ?> clearfix">
+		<main id="main" class="site-main 
+		<?php
+		if ( 'grid' === $ta_archive_layout || 'masonry' === $ta_archive_layout ) {
+				echo 'ta-archive-grid-2 archive-' . esc_attr( $ta_archive_layout );
+		} else {
+			echo 'ta-archive-simple'; }
+		?>
+		clearfix">
 
-		<?php if ( have_posts() ) :
-			
+		<?php
+		if ( have_posts() ) :
+
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -43,7 +51,10 @@ $ta_archive_layout = get_theme_mod('ta_archive_layout','simple');
 
 	</div><!-- #primary -->
 
-	<?php if( $global_sidebar_layout != 'no-sidebar' ){ get_sidebar(); } ?>
+	<?php
+	if ( 'no-sidebar' !== $global_sidebar_layout ) {
+			get_sidebar(); }
+	?>
 
 </div>
 <?php

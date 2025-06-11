@@ -1,0 +1,12 @@
+{
+    "name": "theme/wordpress-theme",
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3"
+    },
+    "require": {},
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

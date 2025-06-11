@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset name="Theme WordPress">
+    <description>PHPCS for WordPress theme using WordPress Coding Standards.</description>
+    <rule ref="WordPress"/>
+    <file>.</file>
+    <exclude-pattern>vendor/*</exclude-pattern>
+    <exclude-pattern>assets/*</exclude-pattern>
+    <exclude-pattern>inc/*</exclude-pattern>
+    <exclude-pattern>style.css</exclude-pattern>
+    <exclude-pattern>template-parts/header/*</exclude-pattern>
+    <exclude-pattern>template-parts/content-page.php</exclude-pattern>
+</ruleset>

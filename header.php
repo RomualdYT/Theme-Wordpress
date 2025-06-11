@@ -24,16 +24,17 @@
 <body <?php body_class(); ?>>
 
 	<?php
-	if( function_exists('wp_body_open') ){
+	if ( function_exists( 'wp_body_open' ) ) {
 		wp_body_open();
-	}else{
+	} else {
 
 		do_action( 'wp_body_open' );
 
 	}
-	
-	$ed_preloader = get_theme_mod('ed_preloader',1);
-	if( $ed_preloader ){ ?>
+
+	$ed_preloader = get_theme_mod( 'ed_preloader', 1 );
+	if ( $ed_preloader ) {
+		?>
 
 		<div class="ta-preloader">
 			<div class="ta-ripple">
@@ -46,12 +47,13 @@
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'the-words' ); ?></a>
 
-		<?php 
-		$ta_header_layout = get_theme_mod('ta_header_layout',1);
+		<?php
+		$ta_header_layout = get_theme_mod( 'ta_header_layout', 1 );
 		get_template_part( 'template-parts/header/header', $ta_header_layout );
-		
-		if( !is_home() && !is_front_page() ){ ?> 
 
+		if ( ! is_home() && ! is_front_page() ) {
+			?>
+		
 			<div class="ta-breadcrumb-container">
 				<div class="ta-container clearfix">
 
@@ -64,19 +66,20 @@
 				</div>
 			</div>
 
-		<?php }
+			<?php
+		}
 
-		if( is_front_page() ){
-			
-			$ta_header_banner_layout = get_theme_mod('ta_header_banner_layout',1);
+		if ( is_front_page() ) {
+
+			$ta_header_banner_layout = get_theme_mod( 'ta_header_banner_layout', 1 );
 			get_template_part( 'template-parts/banner/banner', $ta_header_banner_layout );
 
 			the_words_featured_category();
 
-			/**
-		     * the_words_subescribe - 10
-		    **/
-		    do_action('the_words_header_content','the_words_subescribe');
+						/**
+						 * The_words_subscribe - 10
+						 */
+						do_action( 'the_words_header_content', 'the_words_subescribe' );
 		}
 
 		?>
