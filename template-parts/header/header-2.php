@@ -17,7 +17,7 @@ $ed_header_social_icon = get_theme_mod('ed_header_social_icon',0);
 
 	<div class="ta-top-header ta-top-header-2">
 
-		<div class="ta-container clearfix container mx-auto px-4">
+                <div class="ta-container glass-container clearfix container mx-auto px-4">
 
 			<div class="ta-top-header-inner">
 				<?php if( has_nav_menu('the-words-top-menu') ){ ?>
@@ -53,8 +53,8 @@ $ed_header_social_icon = get_theme_mod('ed_header_social_icon',0);
 							</a>
 						</div>
 
-						<div class="ta-header-search">
-							<div class="ta-container clearfix container mx-auto px-4">
+                                                <div class="ta-header-search">
+                                                        <div class="ta-container glass-container clearfix container mx-auto px-4">
 
 								<a href="javascript:void(0)" class="nav-focus-close"></a>
 
@@ -87,7 +87,7 @@ $ed_header_social_icon = get_theme_mod('ed_header_social_icon',0);
 
     <div class="ta-header-main clearfix">
 
-    	<div class="ta-container clearfix container mx-auto px-4">
+        <div class="ta-container glass-container clearfix container mx-auto px-4">
 
 			<nav id="site-navigation" class="main-navigation">
 

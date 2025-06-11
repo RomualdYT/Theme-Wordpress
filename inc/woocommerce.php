@@ -12,7 +12,7 @@ if( !function_exists('the_words_wc_before_main_content') ):
 
     function the_words_wc_before_main_content(){
 
-        echo '<div class="ta-container clearfix container mx-auto px-4">';
+        echo '<div class="ta-container glass-container clearfix container mx-auto px-4">';
 
     }
 
