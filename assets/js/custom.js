@@ -1,8 +1,8 @@
 jQuery(document).ready(function($){
-"use scrict";
+"use strict";
     
     // Preloader
-    $(window).load(function(){
+    $(window).on('load', function(){
         setTimeout(function () {
             $('.ta-preloader').fadeOut();
         }, 300);
