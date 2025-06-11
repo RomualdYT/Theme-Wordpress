@@ -81,7 +81,7 @@ function the_words_customize_register( $wp_customize ) {
 	require get_template_directory() . '/inc/customizer/header.php';
 	require get_template_directory() . '/inc/customizer/single.php';
 	require get_template_directory() . '/inc/customizer/footer.php';
-	require get_template_directory() . '/inc/customizer/layoyt.php';
+	require get_template_directory() . '/inc/customizer/layout.php';
 	require get_template_directory() . '/inc/customizer/front-page.php';
 	require get_template_directory() . '/inc/customizer/subescribe.php';
 	require get_template_directory() . '/inc/customizer/instagram.php';

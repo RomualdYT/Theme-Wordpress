@@ -24,7 +24,7 @@ msgstr ""
 msgid "Add widgets here."
 msgstr ""
 
-#: inc/customizer/layoyt.php:85
+#: inc/customizer/layout.php:85
 msgid "Archive Page Layout"
 msgstr ""
 
@@ -255,7 +255,7 @@ msgstr ""
 msgid "Front Page Settings"
 msgstr ""
 
-#: inc/customizer/layoyt.php:90
+#: inc/customizer/layout.php:90
 msgid "Full Width Layout"
 msgstr ""
 
@@ -263,11 +263,11 @@ msgstr ""
 msgid "General Settings"
 msgstr ""
 
-#: inc/customizer/layoyt.php:45
+#: inc/customizer/layout.php:45
 msgid "Global Pages Sidebar Layout"
 msgstr ""
 
-#: inc/customizer/layoyt.php:25
+#: inc/customizer/layout.php:25
 msgid "Global Posts Sidebar Layout"
 msgstr ""
 
@@ -275,7 +275,7 @@ msgstr ""
 msgid "Global sidebar"
 msgstr ""
 
-#: inc/customizer/layoyt.php:65
+#: inc/customizer/layout.php:65
 msgid "Global Sidebar Layout"
 msgstr ""
 
@@ -352,7 +352,7 @@ msgstr ""
 msgid "Layout One"
 msgstr ""
 
-#: inc/customizer/layoyt.php:10
+#: inc/customizer/layout.php:10
 msgid "Layout Setting"
 msgstr ""
 
@@ -370,8 +370,8 @@ msgstr ""
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: inc/customizer/layoyt.php:30 inc/customizer/layoyt.php:50
-#: inc/customizer/layoyt.php:70
+#: inc/customizer/layout.php:30 inc/customizer/layout.php:50
+#: inc/customizer/layout.php:70
 msgid "Left Sidebar"
 msgstr ""
 
@@ -389,7 +389,7 @@ msgctxt "list item separator"
 msgid ", "
 msgstr ""
 
-#: inc/customizer/layoyt.php:91
+#: inc/customizer/layout.php:91
 msgid "Masonry Layout"
 msgstr ""
 
@@ -428,8 +428,8 @@ msgstr ""
 msgid "No file chosen"
 msgstr ""
 
-#: inc/customizer/layoyt.php:31 inc/customizer/layoyt.php:51
-#: inc/customizer/layoyt.php:71
+#: inc/customizer/layout.php:31 inc/customizer/layout.php:51
+#: inc/customizer/layout.php:71
 msgid "No Sidebar"
 msgstr ""
 
@@ -521,8 +521,8 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: inc/customizer/layoyt.php:29 inc/customizer/layoyt.php:49
-#: inc/customizer/layoyt.php:69
+#: inc/customizer/layout.php:29 inc/customizer/layout.php:49
+#: inc/customizer/layout.php:69
 msgid "Right Sidebar"
 msgstr ""
 
@@ -558,7 +558,7 @@ msgstr ""
 msgid "Sidebar Layouts"
 msgstr ""
 
-#: inc/customizer/layoyt.php:89
+#: inc/customizer/layout.php:89
 msgid "Simple Grid Layout"
 msgstr ""
 
