@@ -405,7 +405,7 @@ textarea {
 	font-family: 'DM Sans',sans-serif;
 	font-size: 17px;
 	line-height: 1.5;
-    color: #555;
+    color: #333;
     font-weight: 400;
 }
 .ta-secondary-font{
@@ -468,8 +468,8 @@ code, kbd, tt, var {
 }
 
 abbr, acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
+        border-bottom: 1px dotted #333;
+        cursor: help;
 }
 
 mark, ins {
@@ -601,7 +601,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
+        color: #333;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 3px;
@@ -2837,9 +2837,9 @@ span.subscribe-title-icon svg {
     background-color: #5ca595;
 }
 
-.woocommerce div.product p.price, .woocommerce div.product span.price, 
+.woocommerce div.product p.price, .woocommerce div.product span.price,
 .woocommerce ul.products li.product .price {
-    color: #555555;
+    color: #333;
 }
 .woocommerce ul.products li.product .onsale {
     top: 10px;
