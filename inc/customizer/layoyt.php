@@ -1,13 +1,23 @@
-<?php
-/**
- * The Words Layouts Optionl
- *
- * @package The_Words
- */
-
-$wp_customize->add_section( 'layout_section',
-    array(
-    'title'      => esc_html__( 'Layout Setting', 'the-words' ),
+ * The BLIP! Layouts Optionl
+ * @package The_BLIP
+    'title'      => esc_html__( 'Paramètres de mise en page', 'the-blip' ),
+        'label' => esc_html__('Disposition globale de la barre latérale des articles', 'the-blip'),
+            'right-sidebar' => esc_html__('Barre latérale droite', 'the-blip'),
+            'left-sidebar' => esc_html__('Barre latérale gauche', 'the-blip'),
+            'no-sidebar' => esc_html__('Pas de barre latérale', 'the-blip'),
+        'label' => esc_html__('Disposition globale de la barre latérale des pages', 'the-blip'),
+            'right-sidebar' => esc_html__('Barre latérale droite', 'the-blip'),
+            'left-sidebar' => esc_html__('Barre latérale gauche', 'the-blip'),
+            'no-sidebar' => esc_html__('Pas de barre latérale', 'the-blip'),
+        'label' => esc_html__('Disposition générale de la barre latérale', 'the-blip'),
+            'right-sidebar' => esc_html__('Barre latérale droite', 'the-blip'),
+            'left-sidebar' => esc_html__('Barre latérale gauche', 'the-blip'),
+            'no-sidebar' => esc_html__('Pas de barre latérale', 'the-blip'),
+        'label' => esc_html__('Disposition des archives', 'the-blip'),
+            'grid' => esc_html__('Grille simple', 'the-blip'),
+            'simple' => esc_html__('Pleine largeur', 'the-blip'),
+            'masonry' => esc_html__('Masonry', 'the-blip'),
+
     'capability' => 'edit_theme_options',
     'panel'      => 'theme_option_panel',
     )

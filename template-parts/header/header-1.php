@@ -1,6 +1,9 @@
-<?php
-/**
- * Customizer Header Layout One
+ * @package The_BLIP
+<?php if( has_nav_menu('the-blip-top-menu') || $ed_header_social_icon ){ ?>
+	<div class="ta-top-header top-header-1 <?php if( !has_nav_menu('the-blip-top-menu') ){ echo 'no-menu'; }?>">
+				<?php if( has_nav_menu('the-blip-top-menu') ){ ?>
+								'theme_location' => 'the-blip-top-menu',
+
  *
  * @package The_Words
 **/
@@ -34,7 +37,7 @@ if( !$ed_header_search ){
 							?>
 
 						</nav><!-- #site-navigation -->
-					</div>
+					</div>					'theme_location' => 'the-blip-primary-menu',
 
 				<?php } ?>
 

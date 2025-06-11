@@ -1,8 +1,13 @@
-<?php
-/**
- * @package The_Words
- */
-
+ * @package The_BLIP
+                'The_Words_Author_Widget', esc_html__('TA : Author Box', 'the-blip'), array(
+                'description' => esc_html__('This Widget show Author Profile', 'the-blip')
+                'the_words_widgets_title' => esc_html__('Author Name', 'the-blip'),
+                'the_words_widgets_title' => esc_html__('Author Words', 'the-blip'),
+                'the_words_widgets_title' => esc_html__('Author Image', 'the-blip'),
+                'the_words_widgets_title' => esc_html__('Facebook Link', 'the-blip'),
+                'the_words_widgets_title' => esc_html__('Twitter Link', 'the-blip'),
+                'the_words_widgets_title' => esc_html__('Youtube Link', 'the-blip'),
+                'the_words_widgets_title' => esc_html__('Instagram Link', 'the-blip'),
 add_action('widgets_init', 'the_words_author_register');
 
 function the_words_author_register() {

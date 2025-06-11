@@ -1,5 +1,7 @@
-<?php
-/**
+ * @package The_BLIP
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'the-blip' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'the-blip' ),
+
  * Template part for displaying page content in page.php
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/

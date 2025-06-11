@@ -1,7 +1,11 @@
-<?php
-/**
- * Create a metabox to added some custom filed in posts.
- *
+ * @package The BLIP!
+                esc_html__( 'Sidebar Layouts', 'the-blip' ),
+                esc_html__( 'Sidebar', 'the-blip' ),
+                        'label'     => esc_html__( 'Global sidebar', 'the-blip' ),
+                        'label'     => esc_html__( 'Left sidebar', 'the-blip' ),
+                        'label' => esc_html__( 'Right sidebar', 'the-blip' ),
+                        'label'     => esc_html__( 'No sidebar', 'the-blip' ),
+                <td colspan="4"><em class="f13"><?php esc_html_e('Choose Sidebar Template','the-blip'); ?></em></td>
  * @package The Words
  */
 

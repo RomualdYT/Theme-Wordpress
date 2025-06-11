@@ -1,4 +1,5 @@
-<?php
+ * @package The_BLIP
+
 /**
  * The main template file
  *

@@ -1,5 +1,7 @@
-<?php
-/**
+ * @package The_BLIP
+						<img title="<?php esc_attr_e('Author Image','the-blip'); ?>" alt="<?php esc_attr_e('Author Image','the-blip'); ?>" src="<?php echo esc_url($avatar_image); ?>" >
+		        previous_post_link( '<div class="ta-prev-post"><h4 class="ta-nav-title">' . esc_html__( 'Previous Post', 'the-blip' ) . '</h4><span><i class="fas fa-chevron-left"></i>%link</span></div>' );
+		        next_post_link( '<div class="ta-next-post"><h4 class="ta-nav-title">' . esc_html__( 'Next Post', 'the-blip' ) . '</h4><span>%link<i class="fas fa-chevron-right"></i></span></div>' );
  * The template for displaying all single posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post

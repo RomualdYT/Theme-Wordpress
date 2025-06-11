@@ -1,4 +1,5 @@
-<?php
+ * @package The_BLIP
+
 /**
  * The sidebar containing the main widget area
  *

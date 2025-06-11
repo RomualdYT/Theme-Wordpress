@@ -1,4 +1,5 @@
-<?php
+ * The BLIP! Front Page Optionl
+ * @package The_BLIP
 /**
  * The Words Front Page Optionl
  *

@@ -1,6 +1,9 @@
-<?php
-/**
- * This file represents an example of the code that themes would use to register
+ * @version    2.6.1 for parent theme The BLIP!
+			'name'        => esc_html__('Categories Images','the-blip'),
+			'name'        => esc_html__('MC4WP: Mailchimp for WordPress','the-blip'),
+			'name'        => esc_html__('Social Feed Gallery','the-blip'),
+			'name'        => esc_html__('One Click Demo Import','the-blip'),
+		'id'           => 'the-blip',                 // Unique ID for hashing notices for multiple instances of TGMPA.
  * the required plugins.
  *
  * It is expected that theme authors would copy and paste this code into their

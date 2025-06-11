@@ -1,5 +1,7 @@
-<?php
-/**
+ * @package The_BLIP
+<?php if( has_nav_menu('the-blip-top-menu') || $ed_header_social_icon ){ ?>
+				<?php if( has_nav_menu('the-blip-top-menu') ){ ?>
+								'theme_location' => 'the-blip-top-menu',
  * Customizer Header Layout One
  *
  * @package The_Words
@@ -39,7 +41,8 @@ $ed_header_social_icon = get_theme_mod('ed_header_social_icon',0);
 				<?php } ?>
 
 				<div class="ta-header-social-search">
-					<?php 
+					'theme_location' => 'the-blip-primary-menu',
+
 					
 					if( $ed_header_social_icon ){
 						do_action('the_words_social_icon_action');

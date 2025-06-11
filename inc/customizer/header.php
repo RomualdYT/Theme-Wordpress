@@ -1,7 +1,11 @@
-<?php
-/**
- * The Words Header Optionl
- *
+ * The BLIP! Header Optionl
+ * @package The_BLIP
+    'title'      => esc_html__( "Paramètres d'en-tête", 'the-blip' ),
+        'label' => esc_html__('Activer la recherche', 'the-blip'),
+        'label' => esc_html__("Mise en page de l'en-tête", 'the-blip'),
+            '1' => esc_html__('Mise en page 1', 'the-blip'),
+            '2' => esc_html__('Mise en page 2', 'the-blip'),
+            '3' => esc_html__('Mise en page 3', 'the-blip'),
  * @package The_Words
  */
 

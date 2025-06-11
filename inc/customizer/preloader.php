@@ -1,5 +1,7 @@
-<?php
-/**
+ * @package The_BLIP
+    'title'      => esc_html__( 'Paramètres du préchargeur', 'the-blip' ),
+        'label' => esc_html__('Activer le préchargeur', 'the-blip'),
+
  * @package The_Words
  */
 

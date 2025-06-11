@@ -1,6 +1,9 @@
-<?php
-/**
- * Template part for displaying posts
+ * @package The_BLIP
+			$image_size = 'the-blip-full';
+			$image_size = 'the-blip-full';
+			$image_size = 'the-blip-grid';
+									__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'the-blip' ),
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'the-blip' ),
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

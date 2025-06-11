@@ -1,10 +1,17 @@
-<?php
-/**
- * The Words Front Page Optionl
- *
- * @package The_Words
- */
-
+ * The BLIP! Front Page Optionl
+ * @package The_BLIP
+    'title'      => esc_html__( "Bannière d'en-tête", 'the-blip' ),
+        'label' => esc_html__('Activer la section bannière', 'the-blip'),
+        'label' => esc_html__('Catégorie de la bannière', 'the-blip'),
+        'label' => esc_html__("Mise en page de la bannière", 'the-blip'),
+            '1' => esc_html__('Mise en page 1', 'the-blip'),
+            '2' => esc_html__('Mise en page 2', 'the-blip'),
+            '3' => esc_html__('Mise en page 3', 'the-blip'),
+    'title'      => esc_html__( 'Section catégorie mise en avant', 'the-blip' ),
+        'label' => esc_html__('Activer la section catégorie mise en avant', 'the-blip'),
+        'label' => esc_html__('Catégorie mise en avant 1', 'the-blip'),
+        'label' => esc_html__('Catégorie mise en avant 2', 'the-blip'),
+        'label' => esc_html__('Catégorie mise en avant 3', 'the-blip'),
 $the_words_cat_list = the_words_category_list();
 
 $wp_customize->add_section( 'header_banner_section',

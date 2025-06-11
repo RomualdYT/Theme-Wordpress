@@ -1,10 +1,17 @@
-<?php
-/**
- * The Words Widgets
- *
- * @package The_Words
- */
-
+ * The BLIP! Widgets
+ * @package The_BLIP
+		'name'          => esc_html__( 'Sidebar', 'the-blip' ),
+		'description'   => esc_html__( 'Add widgets here.', 'the-blip' ),
+		'name'          => esc_html__( 'Footer One', 'the-blip' ),
+		'id'            => 'the-blip-footer-1',
+		'description'   => esc_html__( 'Add widgets here.', 'the-blip' ),
+		'name'          => esc_html__( 'Footer Two', 'the-blip' ),
+		'id'            => 'the-blip-footer-2',
+		'description'   => esc_html__( 'Add widgets here.', 'the-blip' ),
+		'name'          => esc_html__( 'Footer Three', 'the-blip' ),
+		'id'            => 'the-blip-footer-3',
+		'description'   => esc_html__( 'Add widgets here.', 'the-blip' ),
+
 /**
  * Register widget area.
  *

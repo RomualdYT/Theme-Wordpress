@@ -1,4 +1,5 @@
-<?php
+ * @version   2.6.1 for parent theme The BLIP! for publication on WordPress.org
+
 /**
  * Plugin installation and activation for WordPress themes.
  *
@@ -148,19 +149,31 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 */
 		public $parent_slug = 'themes.php';
 
-		/**
-		 * Capability needed to view the plugin installation menu item.
-		 *
-		 * @since 2.5.0
-		 *
-		 * @var string
-		 */
-		public $capability = 'edit_theme_options';
-
-		/**
-		 * Default absolute path to folder containing bundled plugin zip files.
-		 *
-		 * @since 2.0.0
+		/**				'page_title'                      => __( 'Install Required Plugins', 'the-blip' ),
+				'menu_title'                      => __( 'Install Plugins', 'the-blip' ),
+				'installing'                      => __( 'Installing Plugin: %s', 'the-blip' ),
+				'updating'                        => __( 'Updating Plugin: %s', 'the-blip' ),
+				'oops'                            => __( 'Something went wrong with the plugin API.', 'the-blip' ),
+					'the-blip'
+					'the-blip'
+					'the-blip'
+					'the-blip'
+					'the-blip'
+					'the-blip'
+					'the-blip'
+					'the-blip'
+					'the-blip'
+				'return'                          => __( 'Return to Required Plugins Installer', 'the-blip' ),
+				'dashboard'                       => __( 'Return to the Dashboard', 'the-blip' ),
+				'plugin_activated'                => __( 'Plugin activated successfully.', 'the-blip' ),
+				'activated_successfully'          => __( 'The following plugin was activated successfully:', 'the-blip' ),
+				'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'the-blip' ),
+				'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'the-blip' ),
+				'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'the-blip' ),
+				'dismiss'                         => __( 'Dismiss this notice', 'the-blip' ),
+				'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'the-blip' ),
+				'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'the-blip' ),
+
 		 *
 		 * @var string Absolute path prefix to zip file location for bundled plugins. Default is empty string.
 		 */
@@ -246,7 +259,8 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 *
 		 * {@internal This method should be `protected`, but as too many TGMPA implementations
 		 * haven't upgraded beyond v2.3.6 yet, this gives backward compatibility issues.
-		 * Reverted back to public for the time being.}}
+				esc_attr__( 'This plugin needs to be updated to be compatible with your theme.', 'the-blip' ),
+				esc_html__( 'Update Required', 'the-blip' )
 		 *
 		 * @since 1.0.0
 		 *
@@ -398,7 +412,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			);
 
 			do_action( 'tgmpa_register' );
-
+					echo '<p>', sprintf( esc_html( $this->strings['complete'] ), '<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Return to the Dashboard', 'the-blip' ) . '</a>' ), '</p>';
 			/* After this point, the plugins should be registered and the configuration set. */
 
 			// Proceed only if we have plugins to handle.
@@ -452,7 +466,8 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 
 
-		/**
+						return new WP_Error( 'rename_failed', esc_html__( 'The remote plugin package does not contain a folder with the desired slug and renaming did not work.', 'the-blip' ) . ' ' . esc_html__( 'Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines.', 'the-blip' ), array( 'found' => $subdir_name, 'expected' => $desired_slug ) );
+					return new WP_Error( 'packaged_wrong', esc_html__( 'The remote plugin package consists of more than one file, but the files are not packaged in a folder.', 'the-blip' ) . ' ' . esc_html__( 'Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines.', 'the-blip' ), array( 'found' => $subdir_name, 'expected' => $desired_slug ) );
 		 * Hook in plugin action link filters for the WP native plugins page.
 		 *
 		 * - Prevent activation of plugins which don't meet the minimum version requirements.
@@ -545,9 +560,11 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 * @since 2.1.0
 		 *
 		 * @global string $tab Used as iframe div class names, helps with styling
-		 * @global string $body_id Used as the iframe body ID, helps with styling
-		 *
-		 * @return null Returns early if not the TGMPA page.
+		 * @global string $body_id Used as the iframe body ID, helps with styling						$imploded       = empty( $linked_plugins ) ? $last_plugin : ( implode( ', ', $linked_plugins ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'the-blip' ) . ' ' . $last_plugin );
+								translate_nooped_plural( $this->strings[ $type ], $count, 'the-blip' ),
+						translate_nooped_plural( $this->strings['install_link'], $install_count, 'the-blip' ),
+						translate_nooped_plural( $this->strings['update_link'], $update_count, 'the-blip' ),
+					translate_nooped_plural( $this->strings['activate_link'], $activate_count, 'the-blip' ),
 		 */
 		public function admin_init() {
 			if ( ! $this->is_tgmpa_page() ) {
@@ -976,7 +993,8 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			} elseif ( $this->is_plugin_active( $slug ) ) {
 				// No simpler message format provided as this message should never be encountered
 				// on the plugin install page.
-				echo '<div id="message" class="error"><p>',
+						__( 'TGMPA v%s', 'the-blip' ),
+
 					sprintf(
 						esc_html( $this->strings['plugin_already_active'] ),
 						'<strong>' . esc_html( $this->plugins[ $slug ]['name'] ) . '</strong>'
@@ -1121,15 +1139,23 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 						$imploded       = empty( $linked_plugins ) ? $last_plugin : ( implode( ', ', $linked_plugins ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'the-words' ) . ' ' . $last_plugin );
 
 						$rendered .= sprintf(
-							$line_template,
-							sprintf(
-								translate_nooped_plural( $this->strings[ $type ], $count, 'the-words' ),
-								$imploded,
-								$count
-							)
-						);
-
-					}
+							$line_template,				return __( 'Required', 'the-blip' );
+			return __( 'Recommended', 'the-blip' );
+					$string = __( 'WordPress Repository', 'the-blip' );
+					$string = __( 'External Source', 'the-blip' );
+					$string = __( 'Pre-Packaged', 'the-blip' );
+				return __( 'Not Installed', 'the-blip' );
+				$install_status = __( 'Installed But Not Activated', 'the-blip' );
+				$install_status = __( 'Active', 'the-blip' );
+				$update_status = __( 'Required Update not Available', 'the-blip' );
+				$update_status = __( 'Requires Update', 'the-blip' );
+				$update_status = __( 'Update recommended', 'the-blip' );
+				_x( '%1$s, %2$s', 'Install/Update Status', 'the-blip' ),
+						$text = _nx( 'All <span class="count">(%s)</span>', 'All <span class="count">(%s)</span>', $count, 'plugins', 'the-blip' );
+						$text = _n( 'To Install <span class="count">(%s)</span>', 'To Install <span class="count">(%s)</span>', $count, 'the-blip' );
+						$text = _n( 'Update Available <span class="count">(%s)</span>', 'Update Available <span class="count">(%s)</span>', $count, 'the-blip' );
+						$text = _n( 'To Activate <span class="count">(%s)</span>', 'To Activate <span class="count">(%s)</span>', $count, 'the-blip' );
+
 					unset( $type, $plugin_group, $linked_plugins, $count, $last_plugin, $imploded );
 
 					$rendered .= $this->create_user_action_links_for_notice( $install_link_count, $update_link_count, $activate_link_count, $line_template );
@@ -1226,13 +1252,20 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					return 'updated';
 				}
 			}
-		}
-
-		/**
-		 * Display settings errors and remove those which have been displayed to avoid duplicate messages showing
-		 *
-		 * @since 2.5.0
-		 */
+				$installed = ! empty( $item['installed_version'] ) ? $item['installed_version'] : _x( 'unknown', 'as in: "version nr unknown"', 'the-blip' );
+					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Installed version:', 'the-blip' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;">%1$s</span>' . __( 'Minimum required version:', 'the-blip' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Available version:', 'the-blip' ) . '</p>',
+			echo esc_html__( 'No plugins to install, update or activate.', 'the-blip' ) . ' <a href="' . esc_url( self_admin_url() ) . '"> ' . esc_html__( 'Return to the Dashboard', 'the-blip' ) . '</a>';
+				'plugin' => __( 'Plugin', 'the-blip' ),
+				'source' => __( 'Source', 'the-blip' ),
+				'type'   => __( 'Type', 'the-blip' ),
+				$columns['version'] = __( 'Version', 'the-blip' );
+				$columns['status']  = __( 'Status', 'the-blip' );
+				$actions['install'] = __( 'Install %2$s', 'the-blip' );
+					$actions['update'] = __( 'Update %2$s', 'the-blip' );
+					$actions['activate'] = __( 'Activate %2$s', 'the-blip' );
+
 		protected function display_settings_errors() {
 			global $wp_settings_errors;
 
@@ -1327,10 +1360,14 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		/**
 		 * Determine what type of source the plugin comes from.
 		 *
-		 * @since 2.5.0
-		 *
-		 * @param string $source The source of the plugin as provided, either empty (= WP repo), a file path
-		 *                       (= bundled) or an external URL.
+							esc_html__( 'Upgrade message from the plugin author:', 'the-blip' ),
+					$actions['tgmpa-bulk-install'] = __( 'Install', 'the-blip' );
+					$actions['tgmpa-bulk-update'] = __( 'Update', 'the-blip' );
+					$actions['tgmpa-bulk-activate'] = __( 'Activate', 'the-blip' );
+						$message = __( 'No plugins were selected to be installed. No action taken.', 'the-blip' );
+						$message = __( 'No plugins were selected to be updated. No action taken.', 'the-blip' );
+						$message = __( 'No plugins are available to be installed at this time.', 'the-blip' );
+						$message = __( 'No plugins are available to be updated at this time.', 'the-blip' );
 		 * @return string 'repo', 'external', or 'bundled'
 		 */
 		protected function get_plugin_source_type( $source ) {
@@ -1439,8 +1476,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 * Set file_path key for each installed plugin.
 		 *
 		 * @since 2.1.0
-		 *
-		 * @param string $plugin_slug Optional. If set, only (re-)populates the file path for that specific plugin.
+					echo '<div id="message" class="error"><p>', esc_html__( 'No plugins were selected to be activated. No action taken.', 'the-blip' ), '</p></div>';
+					echo '<div id="message" class="error"><p>', esc_html__( 'No plugins are available to be activated at this time.', 'the-blip' ), '</p></div>';
+					$imploded     = empty( $plugin_names ) ? $last_plugin : ( implode( ', ', $plugin_names ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'the-blip' ) . ' ' . $last_plugin );
+						esc_html( _n( 'The following plugin was activated successfully:', 'The following plugins were activated successfully:', $count, 'the-blip' ) ),
 		 *                            Parameter added in v2.5.0.
 		 */
 		public function populate_file_path( $plugin_slug = '' ) {
@@ -1564,7 +1603,8 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				} else {
 					$api[ $slug ] = $response;
 				}
-			}
+						$this->strings['activation_failed']  = __( 'Plugin activation failed.', 'the-blip' );
+						$this->strings['activation_success'] = __( 'Plugin activated successfully.', 'the-blip' );
 
 			return $api[ $slug ];
 		}
@@ -1734,12 +1774,18 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		/**
 		 * Check if a plugin is active.
 		 *
-		 * @since 2.5.0
-		 *
-		 * @param string $slug Plugin slug.
-		 * @return bool True if active, false otherwise.
-		 */
-		public function is_plugin_active( $slug ) {
+							$this->upgrader->strings['skin_before_update_header'] = __( 'Updating Plugin %1$s (%2$d/%3$d)', 'the-blip' );
+							$this->upgrader->strings['skin_update_failed_error'] = __( 'An error occurred while installing %1$s: <strong>%2$s</strong>.', 'the-blip' );
+							$this->upgrader->strings['skin_update_failed'] = __( 'The installation of %1$s failed.', 'the-blip' );
+								$this->upgrader->strings['skin_upgrade_start'] = __( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'the-blip' );
+								$this->upgrader->strings['skin_update_successful'] = __( '%1$s installed and activated successfully.', 'the-blip' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'the-blip' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'the-blip' ) . '</span>.</a>';
+								$this->upgrader->strings['skin_upgrade_end']       = __( 'All installations and activations have been completed.', 'the-blip' );
+								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'the-blip' );
+								$this->upgrader->strings['skin_upgrade_start'] = __( 'The installation process is starting. This process may take a while on some hosts, so please be patient.', 'the-blip' );
+								$this->upgrader->strings['skin_update_successful'] = esc_html__( '%1$s installed successfully.', 'the-blip' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'the-blip' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'the-blip' ) . '</span>.</a>';
+								$this->upgrader->strings['skin_upgrade_end']       = __( 'All installations have been completed.', 'the-blip' );
+								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing Plugin %1$s (%2$d/%3$d)', 'the-blip' );
+
 			return ( ( ! empty( $this->plugins[ $slug ]['is_callable'] ) && is_callable( $this->plugins[ $slug ]['is_callable'] ) ) || is_plugin_active( $this->plugins[ $slug ]['file_path'] ) );
 		}
 
@@ -1775,7 +1821,8 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 * @since 2.6.0
 		 *
 		 * @param string $slug Plugin slug.
-		 * @return bool True if OK to proceed with update, false otherwise.
+								'<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Return to the Dashboard', 'the-blip' ) . '</a>'
+
 		 */
 		public function is_plugin_updatetable( $slug ) {
 			if ( ! $this->is_plugin_installed( $slug ) ) {

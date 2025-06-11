@@ -1,11 +1,19 @@
-<?php
-/**
- * The Words Social Icons
- *
- * @package The_Words
- */
-
-$wp_customize->add_section( 'social_icon_section',
+ * The BLIP! Social Icons
+ * @package The_BLIP
+    'title'      => esc_html__( 'Icônes sociales', 'the-blip' ),
+        'label' => esc_html__('Activer les icônes sociales dans l\'en-tête', 'the-blip'),
+        'label' => esc_html__('Activer les icônes sociales dans le pied de page', 'the-blip'),
+    'label'    => esc_html__( 'Facebook', 'the-blip' ),
+    'label'    => esc_html__( 'Twitter', 'the-blip' ),
+    'label'    => esc_html__( 'Instagram', 'the-blip' ),
+    'label'    => esc_html__( 'Youtube', 'the-blip' ),
+    'label'    => esc_html__( 'LinkedIn', 'the-blip' ),
+    'label'    => esc_html__( 'Pinterest', 'the-blip' ),
+    'label'    => esc_html__( 'VK', 'the-blip' ),
+    'label'    => esc_html__( 'Reddit', 'the-blip' ),
+    'label'    => esc_html__( 'Vimeo ', 'the-blip' ),
+    'label'    => esc_html__( 'WhatsApp ', 'the-blip' ),
+    'label'    => esc_html__( 'Telegram ', 'the-blip' ),
     array(
     'title'      => esc_html__( 'Social Icons', 'the-words' ),
     'capability' => 'edit_theme_options',

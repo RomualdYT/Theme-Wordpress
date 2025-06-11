@@ -1,7 +1,11 @@
-<?php
-/**
- * The Words Subescribe
- *
+ * The BLIP! Subescribe
+ * @package The_BLIP
+    'title'      => esc_html__( 'Section Instagram', 'the-blip' ),
+        'label' => esc_html__('Activer la section Instagram', 'the-blip'),
+        'label' => esc_html__('Shortcode Instagram', 'the-blip'),
+        'description' => esc_html__('Installez le plugin "Social Feed Gallery" pour le flux Instagram.', 'the-blip'),
+        'label' => esc_html__('Afficher uniquement sur la page d\'accueil', 'the-blip'),
+        'description' => esc_html__('En activant cette option, le flux Instagram ne s\'affichera que sur la page d\'accueil.', 'the-blip'),
  * @package The_Words
  */
 

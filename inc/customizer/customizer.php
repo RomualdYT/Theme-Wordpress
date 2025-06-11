@@ -1,37 +1,12 @@
-<?php
-/**
- * The Words Theme Customizer
- *
- * @package The_Words
- */
+ * The BLIP! Theme Customizer
+ * @package The_BLIP
+            'label' => esc_html__('Afficher le titre et le slogan du site', 'the-blip'),
+                        'title'      => esc_html__( 'Réglages généraux', 'the-blip' ),
+                'title'          => esc_html__( "Options de la page d'accueil", 'the-blip' ),
+                        'title'      => esc_html__( 'Options du thème', 'the-blip' ),
+	wp_enqueue_script( 'the-blip-customizer', get_template_directory_uri() . '/assets/core/customizer.js', array( 'customize-preview' ), '20151215', true );
 
-/**
- * Add postMessage support for site title and description for the Theme Customizer.
- *
- * @param WP_Customize_Manager $wp_customize Theme Customizer object.
- */
-function the_words_customize_register( $wp_customize ) {
-	
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-
-	$wp_customize->get_section( 'title_tagline' )->panel = 'the_words_general_panel';
-	$wp_customize->get_section( 'header_image' )->panel = 'the_words_general_panel';
-	$wp_customize->get_section( 'background_image' )->panel = 'the_words_general_panel';
-	$wp_customize->get_section( 'colors' )->panel = 'the_words_general_panel';
-
-	$wp_customize->add_setting('enable_site_title',
-	    array(
-	        'default' => 1,
-	        'capability' => 'edit_theme_options',
-	        'sanitize_callback' => 'the_words_sanitize_checkbox',
-	    )
-	);
-
-	$wp_customize->add_control('enable_site_title',
-	    array(
-	        'label' => esc_html__('Display Site Title and Tagline', 'the-words'),
+
 	        'section' => 'title_tagline',
 	        'type' => 'checkbox',
 	    )
