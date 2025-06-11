@@ -21,9 +21,9 @@ if( $ed_header_banner ){
 
 	if( $banner_post_query->have_posts() ): ?>
 
-		<div class="ta-banner-main">
-			<div class="ta-container clearfix">
-				<div class="ta-banner-2-action">
+               <div class="ta-banner-main">
+                       <div class="ta-container clearfix container mx-auto px-4">
+                               <div class="ta-banner-2-action">
 
 					<?php
 					while( $banner_post_query->have_posts() ){

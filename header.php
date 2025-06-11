@@ -21,7 +21,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('bg-gray-50 text-gray-900'); ?>>
 
 	<?php
 	if( function_exists('wp_body_open') ){
@@ -52,8 +52,8 @@
 		
 		if( !is_home() && !is_front_page() ){ ?> 
 
-			<div class="ta-breadcrumb-container">
-				<div class="ta-container clearfix">
+                        <div class="ta-breadcrumb-container">
+                                <div class="ta-container clearfix container mx-auto px-4">
 
 					<?php breadcrumb_trail(); ?>
 

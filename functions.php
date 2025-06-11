@@ -129,7 +129,16 @@ function the_words_scripts() {
 	wp_enqueue_style( 'the-words-google-fonts', wptt_get_webfont_url( $fonts_url ), array(), _S_VERSION );
 
     wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/lib/slick/slick.css' );
-	wp_enqueue_style( 'the-words-style', get_stylesheet_uri() );
+    wp_enqueue_style( 'the-words-style', get_stylesheet_uri() );
+
+    // TailwindCSS v4 for visual layout
+    wp_enqueue_script(
+        'tailwindcss',
+        'https://cdn.tailwindcss.com/4.0.0',
+        array(),
+        null,
+        false
+    );
 	
 	wp_enqueue_script( 'masonry' );
 	wp_enqueue_script( 'v4-shims', get_template_directory_uri() . '/assets/lib/font-awesome/v4-shims.min.js', array('jquery'), '20151215', true );

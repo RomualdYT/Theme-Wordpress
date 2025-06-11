@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-<div class="ta-container">
+<div class="ta-container container mx-auto px-4">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 

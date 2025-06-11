@@ -18,7 +18,7 @@ $ed_post_excerpt = get_theme_mod('ed_post_excerpt',1);
 
 		<?php the_title( '<h2 class="entry-title ta-large-font ta-secondary-font"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
 
-               <div class="entry-content glass-card">
+               <div class="entry-content glass-card p-4 bg-white/70 backdrop-blur border border-white/30 shadow">
 			<?php
 			if( $ed_post_excerpt ){
 

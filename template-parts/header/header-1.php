@@ -17,7 +17,7 @@ if( !$ed_header_search ){
 
 	<div class="ta-top-header top-header-1 <?php if( !has_nav_menu('the-words-top-menu') ){ echo 'no-menu'; }?>">
 
-		<div class="ta-container clearfix">
+		<div class="ta-container clearfix container mx-auto px-4">
 
 			<div class="ta-top-header-inner">
 				<?php if( has_nav_menu('the-words-top-menu') ){ ?>
@@ -50,13 +50,13 @@ if( !$ed_header_search ){
 
 <?php } ?>
 
-<header id="masthead" class="site-header glass-card ta-header-1 <?php echo esc_attr( $header_class ); ?>" >
+<header id="masthead" class="site-header glass-card bg-white shadow ta-header-1 <?php echo esc_attr( $header_class ); ?>" >
 
 	<?php
 	if( $ed_header_search ){ ?>
 
 		<div class="ta-header-search">
-			<div class="ta-container clearfix">
+			<div class="ta-container clearfix container mx-auto px-4">
 
 				<a href="javascript:void(0)" class="nav-focus-close"></a>
 
@@ -75,7 +75,7 @@ if( !$ed_header_search ){
 
     <div class="ta-header-main clearfix">
 
-    	<div class="ta-container clearfix">
+    	<div class="ta-container clearfix container mx-auto px-4">
 
 			<?php the_words_site_identity(); ?>
 
