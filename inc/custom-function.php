@@ -441,7 +441,7 @@ if( !function_exists('the_words_featured_category') ):
 			$ta_featured_categoey_1 ) ){ ?>
 
                         <div class="tw-featured-category">
-                                <div class="ta-container clearfix container mx-auto px-4">
+                                <div class="ta-container glass-container clearfix container mx-auto px-4">
 					<div class="tw-featured-category-secondary">
 
 						<?php
@@ -525,7 +525,7 @@ if( ! function_exists( 'the_words_single_related_post' ) ) :
             $ed_related_post_title = get_theme_mod('ed_related_post_title',esc_html__( 'Related Posts','the-words' ) ); ?>
 
             <div class="single-related-posts clearfix">
-                <div class="ta-container container mx-auto px-4">
+                <div class="ta-container glass-container container mx-auto px-4">
 
                     <?php if( $ed_related_post_title ){ ?>
 
@@ -605,7 +605,7 @@ if( !function_exists('the_words_subscribe') ):
 		if( $ed_subscribe_section && $subscribe_form_shortcode ){ ?>
 
                     <div class="ta-subscribe-section">
-                        <div class="ta-container container mx-auto px-4">
+                        <div class="ta-container glass-container container mx-auto px-4">
 		                
 		                <?php if( $subscribe_form_title || $subscribe_form_description ){ ?>
 

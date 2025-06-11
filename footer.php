@@ -30,7 +30,7 @@
             is_active_sidebar('the-words-footer-3') || 
         	$ed_footer_social_icon){
             echo '<div class="top-footer" style="background-image:url('.esc_url( $footer_background_image ).')">';
-            echo '<div class="ta-container clearfix container mx-auto px-4">';
+            echo '<div class="ta-container glass-container clearfix container mx-auto px-4">';
 
             if( has_nav_menu('the-words-footer-menu') ):
 

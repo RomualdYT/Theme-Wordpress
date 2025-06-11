@@ -11,7 +11,7 @@ get_header();
 $global_sidebar_layout = get_theme_mod('global_sidebar_layout','right-sidebar');
 $ta_archive_layout = get_theme_mod('ta_archive_layout','simple');
 ?>
-<div class="ta-container clearfix container mx-auto px-4">
+<div class="ta-container glass-container clearfix container mx-auto px-4">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main <?php if( $ta_archive_layout == 'grid' || $ta_archive_layout == 'masonry' ){ echo 'ta-archive-grid-2 archive-'.esc_attr( $ta_archive_layout ); }else{ echo 'ta-archive-simple'; } ?> clearfix">
 

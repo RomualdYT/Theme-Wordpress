@@ -496,8 +496,9 @@ html {
 }
 
 body {
-	background: #fcfcfc;
-	/* Fallback for when there is no custom background color defined. */
+        background: #fcfcfc;
+        /* Fallback for when there is no custom background color defined. */
+        background-image: linear-gradient(135deg, #bfdbfe 0%, #e9d5ff 50%, #fbcfe8 100%);
 }
 
 hr {
@@ -2889,5 +2890,18 @@ nav.woocommerce-MyAccount-navigation .is-active a {
 @supports not (backdrop-filter: blur(10px)) {
     .glass-card {
         background: rgba(255,255,255,0.9);
+    }
+}
+
+.glass-container {
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.4);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+@supports not (backdrop-filter: blur(12px)) {
+    .glass-container {
+        background: rgba(255,255,255,0.95);
     }
 }
