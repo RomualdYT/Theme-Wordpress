@@ -11,10 +11,10 @@
 
     /**
      * the_words_single_related_post - 10
-     * the_words_subescribe - 20
+     * the_words_subscribe - 20
      * the_words_instagram - 30
     **/
-    do_action('the_words_footer_content','the_words_subescribe');
+    do_action('the_words_footer_content','the_words_subscribe');
     ?>
 
 	</div><!-- #content -->
