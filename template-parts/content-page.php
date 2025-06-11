@@ -16,7 +16,7 @@
 
 	<?php the_words_post_thumbnail(); ?>
 
-	<div class="entry-content">
+       <div class="entry-content glass-card">
 		<?php
 		the_content();
 

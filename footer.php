@@ -56,7 +56,7 @@
                 for ($x = 0; $x <= 3; $x++) {
                     if( is_active_sidebar('the-words-footer-'.$x) ){
 
-                        echo '<div id="ta-footer-widget-'.$x.'" class="ta-footer-widget">';
+                        echo '<div id="ta-footer-widget-'.$x.'" class="ta-footer-widget glass-card">';
                             dynamic_sidebar('the-words-footer-'.$x);
                         echo '</div>';
 
