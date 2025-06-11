@@ -27,7 +27,7 @@ if( $the_words_post_sidebar == 'global' || $the_words_post_sidebar == '' ){
 }
 
 ?>
-<div class="ta-container clearfix">
+<div class="ta-container clearfix container mx-auto px-4">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 

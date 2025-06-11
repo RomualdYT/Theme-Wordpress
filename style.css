@@ -13,6 +13,8 @@ Text Domain: the-words
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, two-columns, right-sidebar, grid-layout, footer-widgets, rtl-language-support, theme-options, blog 
 Tested up to: 6.3
 Requires PHP: 5.5
+Tailwind Integration: v4 via CDN
+/* Tailwind utility classes are used for layout and styling; custom CSS only provides minor effects. */
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1199,6 +1201,7 @@ object {
     display: block;
 }
 .ta-container {
+    /* Fallback for blocks without Tailwind container */
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 10px;
@@ -2449,10 +2452,11 @@ span.subscribe-title-icon svg {
 /** Banner 1 Style End **/
 
 @media(max-width:1300px) {
-	.ta-container{
-		width: auto;
-	    padding: 0 15px;
-	}
+        .ta-container{
+                /* maintain spacing on smaller screens */
+                width: auto;
+            padding: 0 15px;
+        }
 }
 
 /** Responsive Menu **/

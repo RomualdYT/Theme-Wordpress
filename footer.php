@@ -19,7 +19,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+	<footer id="colophon" class="site-footer bg-gray-100 text-gray-800" itemscope itemtype="http://schema.org/WPFooter">
 
         <?php
         $ed_footer_social_icon = get_theme_mod('ed_footer_social_icon',1);
@@ -30,7 +30,7 @@
             is_active_sidebar('the-words-footer-3') || 
         	$ed_footer_social_icon){
             echo '<div class="top-footer" style="background-image:url('.esc_url( $footer_background_image ).')">';
-            echo '<div class="ta-container clearfix">';
+            echo '<div class="ta-container clearfix container mx-auto px-4">';
 
             if( has_nav_menu('the-words-footer-menu') ):
 
@@ -56,7 +56,7 @@
                 for ($x = 0; $x <= 3; $x++) {
                     if( is_active_sidebar('the-words-footer-'.$x) ){
 
-                        echo '<div id="ta-footer-widget-' . esc_attr( $x ) . '" class="ta-footer-widget glass-card">';
+                        echo '<div id="ta-footer-widget-' . esc_attr( $x ) . '" class="ta-footer-widget glass-card p-4 bg-white/70 backdrop-blur border border-white/30 shadow">';
                             dynamic_sidebar('the-words-footer-'.$x);
                         echo '</div>';
 

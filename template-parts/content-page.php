@@ -16,7 +16,7 @@
 
 	<?php the_words_post_thumbnail(); ?>
 
-       <div class="entry-content glass-card">
+       <div class="entry-content glass-card p-4 bg-white/70 backdrop-blur border border-white/30 shadow">
 		<?php
 		the_content();
 
