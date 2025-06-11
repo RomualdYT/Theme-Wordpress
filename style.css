@@ -830,10 +830,13 @@ button.child-menu-toggle {
     box-shadow: 0 0 2px #dbdbdb;
 }
 .site-header.ta-header-2 .main-navigation a {
-    color: #555;
+    color: #333;
+}
+.site-header.ta-header-2 .main-navigation a:hover {
+    color: #111;
 }
 .site-header.ta-header-2 .main-navigation ul ul a {
-	color: #494949;
+        color: #494949;
 }
 
 .site-main .comment-navigation, .site-main
@@ -2869,6 +2872,14 @@ nav.woocommerce-MyAccount-navigation .is-active a {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.3);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #333;
+}
+
+.glass-card input,
+.glass-card textarea,
+.glass-card select,
+.glass-card optgroup {
+    color: #333;
 }
 
 @supports not (backdrop-filter: blur(10px)) {
