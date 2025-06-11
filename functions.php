@@ -146,7 +146,7 @@ function the_words_scripts() {
 	wp_enqueue_script( 'match-height', get_template_directory_uri() . '/assets/lib/match-height/jquery.matchHeight-min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'theia-sticky-sidebar', get_template_directory_uri() . '/assets/lib/theia-sticky-sidebar/theia-sticky-sidebar.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/lib/slick/slick.min.js', array('jquery'), '20151215', true );
-	wp_enqueue_script( 'the-words-custom', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), _S_VERSION, true );
+        wp_enqueue_script( 'the-words-custom', get_template_directory_uri() . '/assets/js/custom.js', array('jquery','theia-sticky-sidebar'), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
