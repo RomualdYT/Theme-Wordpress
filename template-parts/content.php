@@ -44,7 +44,7 @@ if(  $ta_archive_layout == 'masonry' ){
 
 		the_words_post_thumbnail($image_size); ?>
 
-		<div class="entry-content-wrap">
+               <div class="entry-content-wrap glass-card">
 
 			<div class="ta-content-wraper">
 

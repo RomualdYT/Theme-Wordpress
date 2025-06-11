@@ -45,7 +45,7 @@ $ed_header_social_icon = get_theme_mod('ed_header_social_icon',0);
 
 <?php } ?>
 
-<header id="masthead" class="site-header ta-header-3 <?php echo esc_attr( $header_class ); ?>" >
+<header id="masthead" class="site-header glass-card ta-header-3 <?php echo esc_attr( $header_class ); ?>" >
 
     <div class="header-3-mid">
 

@@ -2863,3 +2863,16 @@ nav.woocommerce-MyAccount-navigation .is-active a {
 .main-navigation li:first-child {
     padding-left: 0 !important;
 }
+
+.glass-card {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+    .glass-card {
+        background: rgba(255,255,255,0.9);
+    }
+}

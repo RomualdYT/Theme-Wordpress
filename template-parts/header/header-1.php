@@ -50,7 +50,7 @@ if( !$ed_header_search ){
 
 <?php } ?>
 
-<header id="masthead" class="site-header ta-header-1 <?php echo esc_attr( $header_class ); ?>" >
+<header id="masthead" class="site-header glass-card ta-header-1 <?php echo esc_attr( $header_class ); ?>" >
 
 	<?php
 	if( $ed_header_search ){ ?>
