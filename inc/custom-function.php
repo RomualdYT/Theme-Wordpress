@@ -416,7 +416,7 @@ if( !function_exists('the_words_post_formate') ):
 	    ?>
 	        <div class="post-formate-icon">
 
-	            	<?php echo $icon_class; ?>
+                        <?php echo wp_kses_post( $icon_class ); ?>
 
 	        </div>
 	    <?php
