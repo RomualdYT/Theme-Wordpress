@@ -2335,40 +2335,40 @@ a.sidebar-cat-item span {
     border: solid 1px white;
     border-radius: 100%;
 }
-.ta-subescribe-section {
+.ta-subscribe-section {
     background: white;
     padding: 50px 0;
     margin-top: 40px;
 }
-.subescribe-section-title {
+.subscribe-section-title {
     text-align: center;
     padding-bottom: 40px;
     width: 50%;
     margin: 0 auto;
 }
-.subescribe-section-title h2, .subescribe-section-title p {
+.subscribe-section-title h2, .subscribe-section-title p {
     margin: 0;
 }
-.subescribe-section-title h2 {
+.subscribe-section-title h2 {
     font-size: 30px;
     position: relative;
 }
-.subescribe-section-title p {
+.subscribe-section-title p {
     padding-top: 10px;
 }
-.subescribe-title-wrap {
+.subscribe-title-wrap {
     display: inline-block;
     position: relative;
 }
-.subescribe-title-wrap h2 {
+.subscribe-title-wrap h2 {
     color: #5ca595;
 }
-span.subescribe-title-icon {
+span.subscribe-title-icon {
     position: absolute;
     right: 0px;
     top: -20px;
 }
-span.subescribe-title-icon svg {
+span.subscribe-title-icon svg {
     color: #f3f3f3;
     font-size: 70px;
     transform: rotate(20deg);
@@ -2376,7 +2376,7 @@ span.subescribe-title-icon svg {
 .ta-mailchimp-form input[type="checkbox"] {
     margin-right: 10px;
 }
-.ta-subescribe-section {
+.ta-subscribe-section {
     background: white;
     padding: 50px 0;
 }
@@ -2646,7 +2646,7 @@ span.subescribe-title-icon svg {
 
 @media(max-width:768px) {
 
-	.mc4wp-form-fields, .subescribe-section-title {
+	.mc4wp-form-fields, .subscribe-section-title {
 	    width: 70%;
 	}
 	.ta-archive-simple .entry-content-wrap {
@@ -2749,7 +2749,7 @@ span.subescribe-title-icon svg {
 		display: none;
 	}
 
-	.mc4wp-form-fields, .subescribe-section-title {
+	.mc4wp-form-fields, .subscribe-section-title {
 	    width: 100%;
 	}
 

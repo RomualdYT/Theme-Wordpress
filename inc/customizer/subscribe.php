@@ -1,6 +1,6 @@
 <?php
 /**
- * The BLIP Subescribe
+ * The BLIP Subscribe
  *
  * @package The_Words
  */

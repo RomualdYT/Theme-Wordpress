@@ -74,9 +74,9 @@
 			the_words_featured_category();
 
 			/**
-		     * the_words_subescribe - 10
+		     * the_words_subscribe - 10
 		    **/
-		    do_action('the_words_header_content','the_words_subescribe');
+		    do_action('the_words_header_content','the_words_subscribe');
 		}
 
 		?>

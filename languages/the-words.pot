@@ -195,7 +195,7 @@ msgstr ""
 msgid "Enable Search"
 msgstr ""
 
-#: inc/customizer/subescribe.php:25
+#: inc/customizer/subscribe.php:25
 msgid "Enable Subscribe Section"
 msgstr ""
 
@@ -336,7 +336,7 @@ msgstr ""
 msgid "Instagram Shortcode"
 msgstr ""
 
-#: inc/custom-function.php:582 inc/customizer/subescribe.php:48
+#: inc/custom-function.php:582 inc/customizer/subscribe.php:48
 msgid ""
 "It has roots in a piece of classical Latin literature from 45 BC, making it "
 "over 2000 years old."
@@ -465,7 +465,7 @@ msgstr ""
 msgid "Pinterest"
 msgstr ""
 
-#: inc/customizer/subescribe.php:71
+#: inc/customizer/subscribe.php:71
 msgid ""
 "Please install \"MC4WP: Mailchimp for WordPress\" plugin for mailchimp form."
 msgstr ""
@@ -542,7 +542,7 @@ msgstr ""
 msgid "Search results for: %s"
 msgstr ""
 
-#: inc/customizer/subescribe.php:86
+#: inc/customizer/subscribe.php:86
 msgid "Show at Top"
 msgstr ""
 
@@ -580,23 +580,23 @@ msgid ""
 "different keywords."
 msgstr ""
 
-#: inc/customizer/subescribe.php:70
+#: inc/customizer/subscribe.php:70
 msgid "Subscribe Form Shortcode"
 msgstr ""
 
-#: inc/customizer/subescribe.php:10
+#: inc/customizer/subscribe.php:10
 msgid "Subscribe Section"
 msgstr ""
 
-#: inc/customizer/subescribe.php:55
+#: inc/customizer/subscribe.php:55
 msgid "Subscribe Section Description"
 msgstr ""
 
-#: inc/customizer/subescribe.php:40
+#: inc/customizer/subscribe.php:40
 msgid "Subscribe Section Title"
 msgstr ""
 
-#: inc/custom-function.php:581 inc/customizer/subescribe.php:33
+#: inc/custom-function.php:581 inc/customizer/subscribe.php:33
 msgid "Subscribe Us For Latest News"
 msgstr ""
 
@@ -663,7 +663,7 @@ msgstr ""
 msgid "This option will work for single posts author box."
 msgstr ""
 
-#: inc/customizer/subescribe.php:87
+#: inc/customizer/subscribe.php:87
 msgid "This section will be display on the footer on default setting."
 msgstr ""
 

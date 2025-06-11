@@ -590,9 +590,9 @@ endif;
 
 add_action('the_words_footer_content','the_words_single_related_post',10);
 
-if( !function_exists('the_words_subescribe') ):
+if( !function_exists('the_words_subscribe') ):
 
-	function the_words_subescribe(){
+	function the_words_subscribe(){
 
 		if( !is_front_page() ){
 			return;
@@ -604,18 +604,18 @@ if( !function_exists('the_words_subescribe') ):
 		$subscribe_form_shortcode = get_theme_mod('subscribe_form_shortcode');
 		if( $ed_subscribe_section && $subscribe_form_shortcode ){ ?>
 
-		    <div class="ta-subescribe-section">
+		    <div class="ta-subscribe-section">
 		        <div class="ta-container">
 		                
 		                <?php if( $subscribe_form_title || $subscribe_form_description ){ ?>
 
-			                <div class="subescribe-section-title">
+			                <div class="subscribe-section-title">
 
 			                	<?php if( $subscribe_form_title ){ ?>
 
-			                		<div class="subescribe-title-wrap">
+			                		<div class="subscribe-title-wrap">
 
-			                			<span class="subescribe-title-icon">
+			                			<span class="subscribe-title-icon">
 						                	<svg viewBox="0 0 256 512" class="svg-inline--fa fa-chevron-right fa-w-8 fa-3x"><path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z" class=""></path></svg>
 						                </span>
 						                
@@ -648,11 +648,11 @@ endif;
 $ed_subscribe_section_at_top = get_theme_mod('ed_subscribe_section_at_top');
 
 if( !$ed_subscribe_section_at_top ){
-	add_action('the_words_footer_content','the_words_subescribe',20);
+	add_action('the_words_footer_content','the_words_subscribe',20);
 }
 
 if( $ed_subscribe_section_at_top ){
-	add_action('the_words_header_content','the_words_subescribe',20);
+	add_action('the_words_header_content','the_words_subscribe',20);
 }
 
 if( !function_exists('the_words_instagram') ):

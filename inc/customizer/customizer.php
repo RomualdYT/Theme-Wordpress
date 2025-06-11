@@ -83,7 +83,7 @@ function the_words_customize_register( $wp_customize ) {
 	require get_template_directory() . '/inc/customizer/footer.php';
 	require get_template_directory() . '/inc/customizer/layout.php';
 	require get_template_directory() . '/inc/customizer/front-page.php';
-	require get_template_directory() . '/inc/customizer/subescribe.php';
+	require get_template_directory() . '/inc/customizer/subscribe.php';
 	require get_template_directory() . '/inc/customizer/instagram.php';
 	
 	/**  The BLIP Pro Link **/
