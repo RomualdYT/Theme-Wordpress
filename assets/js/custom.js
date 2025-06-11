@@ -116,8 +116,11 @@ jQuery(document).ready(function($){
 
     });
 
-    //Sickey Sidebar
-    $('#secondary, #primary').theiaStickySidebar();
+    // Sticky Sidebar
+    $('#secondary').theiaStickySidebar({
+        containerSelector: '.ta-container',
+        additionalMarginTop: 20
+    });
     
     // Masonry
     $('.archive-masonry').masonry({
